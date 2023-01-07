@@ -21,6 +21,10 @@
 .navbar-toggler-icon {
   background-image: url("menu-s.svg");
 }
+.navbar-toggler {
+  border: none;
+  --bs-navbar-toggler-focus-width: 0;
+}
 .navbar-tripselector .navbar-collapse {
   flex-grow: 0;
 }
@@ -51,9 +55,31 @@
   transform: translate3d(0px, -100%, 0px);
 }
 
-
-
-
+.menu-item {
+  a {
+    text-decoration: none;
+    color: $white;
+    &:hover {
+      color: $light-blue;
+    }
+  }
+}
+.menu-drop-item:hover {
+  background-color: $black;
+  color: $light-blue;
+  a {
+    color: $light-blue;
+  }
+}
+.dropdown-item {
+  background-color: $black;
+  a {
+    color: $white;
+  }
+}
+.dropdown-menu {
+  background-color: $black;
+}
 
 
 
@@ -125,3 +151,5 @@
 @media screen and (min-width: 1600px) {
 
 }
+
+// test
