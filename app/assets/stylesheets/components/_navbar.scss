@@ -12,18 +12,22 @@
 
 .navbar-tripselector {
   justify-content: space-between;
-  background: white;
+  background: $white;
   position: sticky;
   top: 0;
   z-index: 1000;
-  flex-wrap: nowrap;
+  font-family: $body-font;
 }
-
+.navbar-toggler-icon {
+  background-image: url("menu-s.svg");
+}
 .navbar-tripselector .navbar-collapse {
   flex-grow: 0;
 }
 .navbar-logo {
   height: 100%;
+  width: 120%;
+  fill: $black;
 }
 #profile-text {
   padding-right: 15px;
@@ -31,9 +35,10 @@
 #image_space {
   padding-right: 15px;
 }
-.navbar-text {
+.nav-text {
   font-family: $body-font;
   font-size: x-large;
+  color: $black;
 }
 .hdp-text {
   font-family: $body-font;
@@ -42,8 +47,9 @@
 .right-side-buttons-nav {
   margin-right: 1%;
 }
-
-
+.hider {
+  transform: translate3d(0px, -100%, 0px);
+}
 
 
 
@@ -103,8 +109,7 @@
   #image_space {
     padding-right: 15px;
   }
-  .navbar-text {
-    font-family: $body-font;
+  .nav-text {
     font-size: x-large;
   }
   .hdp-text {

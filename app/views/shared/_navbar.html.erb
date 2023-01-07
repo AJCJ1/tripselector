@@ -1,18 +1,19 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-tripselector">
+<div class="navbar navbar-expand-sm navbar-tripselector" data-controller="navbar" data-navbar-target="navcontainer" data-action="scroll@window->navbar#update">
   <div class="container-fluid">
-
+<%# start of left side %>
       <%= link_to "/", class: "navbar-brand" do %>
-        <%= image_tag "logo.png", class:"m-0 navbar-logo", id: "image_space" %>
-        <span class="navbar-text text-dark">
-            Trips Selector
-          </span>
+        <%= image_tag "tripselector-logo.svg", class:"navbar-logo" %>
+        <%# <span class="nav-text">
+            TripSelector
+        </span> %>
       <% end %>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<%# end of left side %>
+<%# start of right side %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="right-side-buttons-nav collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="right-side-buttons-nav collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
