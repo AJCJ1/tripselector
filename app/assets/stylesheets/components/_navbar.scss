@@ -6,6 +6,7 @@
   top: 0;
   z-index: 1000;
   font-family: $body-font;
+  transition: 0.3s ease;
 }
 // container on open
 .navbar-offcanvas-open {
@@ -29,6 +30,7 @@
 // style on scrolldown
 .hider {
   transform: translate3d(0px, -100%, 0px);
+  transition: 0.3s ease;
 }
 // menu list items
 .menu-item {

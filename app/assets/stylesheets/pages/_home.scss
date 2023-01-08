@@ -12,9 +12,7 @@
         linear-gradient(
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)
-        ),
-        /* bottom, image */
-        url("home-banner-bg.jpeg");
+        );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,8 +26,17 @@
     text-align: center;
     align-items:center;
     height: min-content;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    // text-shadow: 1px 1px 2px rgb(0, 0, 0);
   }
+}
+
+.home-banner-video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90vh;
+  width: 100vw;
 }
 
 .centered-text{
