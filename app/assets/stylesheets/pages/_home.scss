@@ -25,7 +25,8 @@
     text-rendering: optimizelegibility;
     display: flex;
     justify-content:center;
-    align-content:center;
+    text-align: center;
+    align-items:center;
     height: min-content;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
   }
