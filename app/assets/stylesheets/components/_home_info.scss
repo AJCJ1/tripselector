@@ -1,12 +1,12 @@
 .home-info-container{
 display: inline-flex;
-background-color: $light-blue;
 margin-left: 4%;
 margin-right: 4%;
 border:none;
 justify-content: center;
 align-items: center;
 border-radius: 10px;
+background-color: #c3e0e0;
 }
 
 .home-info-header {
@@ -25,7 +25,7 @@ border-radius: 10px;
 }
 
 .home-info-segment {
-  width: 33.3%;
+  width: 100%;
   height: 75%;
   display: flex;
   flex-direction: column;
@@ -34,19 +34,23 @@ border-radius: 10px;
   text-align: center;
   padding: 5%;
   font-family: $body-font;
+  color: $black;
+  img {
+    width: 250px;
+    height: 250px;
+  }
 }
-
-.middle-segment-borders {
-  border-left: 1px solid $white;
-  border-right: 1px solid $white;
-}
-
 
 // tablets
 @media screen and (min-width: 500px) {
 
 .home-info-card {
   flex-direction: row;
+}
+
+.middle-segment-borders {
+  border-left: 1px solid $white;
+  border-right: 1px solid $white;
 }
 
 }
@@ -70,6 +74,10 @@ border-radius: 10px;
     text-align: center;
     padding: 5%;
     font-family: $body-font;
+    img {
+      width: 350px;
+      height: 250px;
+    }
   }
   .middle-segment-borders {
     border-left: 1px solid $white;
