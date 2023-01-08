@@ -2,7 +2,7 @@
 .navbar-tripselector {
   justify-content: space-between;
   background: $white;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   font-family: $body-font;

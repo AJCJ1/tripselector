@@ -15,5 +15,5 @@ $headers-font: "Montserrat", "Helvetica", "sans-serif";
 // }
 // $my-font: "Font Name";
 body {
-  font-family: 'Quicksand', sans-serif !important;
+  font-family: $body-font !important;
 }
