@@ -1,22 +1,27 @@
 .home-cta-button {
-  padding:2.5%;
+  padding: 8% 3%;
   border-radius: $border-radius;
   text-align: center;
-  width: 50%;
-  margin: auto;
-  position: absolute;
-  top: 56%;
-  left: 25%;
+  width: 80%;
+  margin: 0 auto;
+  left: 0;
+  position: relative;
   background-color: $gogreen;
   text-decoration: none;
-  font-size: xx-large;
+  font-size: large;
   color: $white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .home-cta-button:hover {
   background-color: $hgogreen;
   color: $white;
 }
-
+.head-button-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20vh;
+}
 
 .trip-btn-cust {
   text-decoration: none;
@@ -26,4 +31,35 @@
   color:$white;
   margin-bottom: 8px;
   margin-left: 8px;
+}
+
+
+// tablets
+@media screen and (min-width: 500px) {
+  .home-cta-button {
+    font-size: x-large;
+    padding:2.5%;
+  }
+  .head-button-cont {
+    gap: 20vh;
+  }
+}
+
+// laptops
+@media screen and (min-width: 992px) {
+  .home-cta-button {
+    font-size: xx-large;
+  }
+}
+// normal desktop
+@media screen and (min-width: 1200px) {
+
+
+}
+@media screen and (min-width: 1200px) and (min-height:525px) {
+
+}
+// bigger monitors
+@media screen and (min-width: 1600px) {
+
 }
