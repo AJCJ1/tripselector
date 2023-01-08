@@ -43,16 +43,6 @@ background-color: #c3e0e0;
 
 // tablets
 @media screen and (min-width: 500px) {
-
-.home-info-card {
-  flex-direction: row;
-}
-
-.middle-segment-borders {
-  border-left: 1px solid $white;
-  border-right: 1px solid $white;
-}
-
 }
 
 // laptops
@@ -63,6 +53,11 @@ background-color: #c3e0e0;
     border:none;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+  }
+  .middle-segment-borders {
+    border-left: 1px solid $white;
+    border-right: 1px solid $white;
   }
   .home-info-segment {
     width: 33.3%;
