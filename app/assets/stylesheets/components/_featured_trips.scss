@@ -21,6 +21,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 5vh;
 }
 
 .featured-card-img-top {
@@ -39,7 +40,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 30%;
+  width: 100%;
   overflow: hidden;
   margin: 1.5%;
 }
@@ -64,4 +65,54 @@
   p {
     height: min-content;
   }
+}
+
+
+
+
+// tablets
+@media screen and (min-width: 500px) {
+}
+
+// laptops
+@media screen and (min-width: 992px) {
+
+}
+// normal desktop
+@media screen and (min-width: 1200px) {
+
+  .featured-card {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+    margin: 1.5%;
+  }
+
+
+.featured-trips-category-container {
+  margin-top: 1%;
+  padding: 1%;
+  padding-top: 2%;
+  margin-bottom: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+
+}
+@media screen and (min-width: 1200px) and (min-height:525px) {
+
+}
+// bigger monitors
+@media screen and (min-width: 1600px) {
+
 }
