@@ -1,15 +1,4 @@
-
-// 320px (eg: iPhone 4 & 5)	16px
-// 768px (eg: iPad portrait)	18px
-// 1024px (eg: iPad landscape)	19px
-// 1280px	20px
-// 1536px	21px
-// 1920px	23px
-// 2560px	25px
-
-// Styles below are defined for mobile,
-// only changed for larger viewports with @media
-
+// container when closed
 .navbar-tripselector {
   justify-content: space-between;
   background: $white;
@@ -18,49 +7,32 @@
   z-index: 1000;
   font-family: $body-font;
 }
+// container on open
 .navbar-offcanvas-open {
   background-color: $black;
   color: $white;
 }
-.navbar-toggler-icon {
-  background-image: url("menu-s.svg");
-}
-
+// 3 lines
 .navbar-toggler {
   border: none;
   --bs-navbar-toggler-focus-width: 0;
 }
-.navbar-tripselector .navbar-collapse {
-  flex-grow: 0;
+.navbar-toggler-icon {
+  background-image: url("menu-s.svg");
 }
+// brand logo
 .navbar-logo {
   height: 100%;
   width: 120%;
   fill: $black;
 }
-#profile-text {
-  padding-right: 15px;
-}
-#image_space {
-  padding-right: 15px;
-}
-.nav-text {
-  font-family: $body-font;
-  font-size: x-large;
-  color: $black;
-}
-.hdp-text {
-  font-family: $body-font;
-  font-size: medium;
-}
-.right-side-buttons-nav {
-  margin-right: 1%;
-}
+// style on scrolldown
 .hider {
   transform: translate3d(0px, -100%, 0px);
 }
-
+// menu list items
 .menu-item {
+  background-color: transparent;
   a {
     text-decoration: none;
     color: $white;
@@ -69,92 +41,11 @@
     }
   }
 }
-.menu-drop-item:hover {
-  background-color: $black;
-  color: $light-blue;
-  a {
-    color: $light-blue;
-  }
-}
-.dropdown-item {
-  background-color: $black;
-  a {
-    color: $white;
-  }
-}
-.dropdown-menu {
-  background-color: $black;
-}
-
-
-
-
-// phones
-// @media screen and (min-width: 320px) {
-//   html {
-//     h1 {
-//       font-size: calc(24px + 6 * ((100vw - 320px) / 680));
-//     }
-//     font-size: calc(15px + 6 * ((100vw - 320px) / 680));
-//   }
-// }
-// tablets
+// tablets onward text is larger
 @media screen and (min-width: 500px) {
-  html {
-    h1 {
-      font-size: calc(26px + 6 * ((100vw - 320px) / 680));
+  .menu-item {
+    a {
+      font-size: x-large;
     }
-    p {
-      font-size: 16px;
-    }
-    font-size: calc(10px + 6 * ((100vw - 320px) / 680));
-  }
-
-}
-
-// laptops
-@media screen and (min-width: 992px) {
-  html {
-    font-size: 20px;
-  }
-
-}
-// normal desktop
-@media screen and (min-width: 1200px) {
-  .navbar-tripselector {
-    justify-content: space-between;
-    background: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  .navbar-tripselector .navbar-collapse {
-    flex-grow: 0;
-  }
-  // .navbar-tripselector .navbar-brand img {
-  //   width: 40px;
-  // }
-  #profile-text {
-    padding-right: 15px;
-  }
-  #image_space {
-    padding-right: 15px;
-  }
-  .nav-text {
-    font-size: x-large;
-  }
-  .hdp-text {
-    font-family: $body-font;
-    font-size: medium;
-  }
-  .right-side-buttons-nav {
-    margin-right: 1%;
   }
 }
-
-// bigger monitors
-@media screen and (min-width: 1600px) {
-
-}
-
-// test
