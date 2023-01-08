@@ -18,9 +18,14 @@
   z-index: 1000;
   font-family: $body-font;
 }
+.navbar-offcanvas-open {
+  background-color: $black;
+  color: $white;
+}
 .navbar-toggler-icon {
   background-image: url("menu-s.svg");
 }
+
 .navbar-toggler {
   border: none;
   --bs-navbar-toggler-focus-width: 0;
@@ -126,9 +131,9 @@
   .navbar-tripselector .navbar-collapse {
     flex-grow: 0;
   }
-  .navbar-tripselector .navbar-brand img {
-    width: 40px;
-  }
+  // .navbar-tripselector .navbar-brand img {
+  //   width: 40px;
+  // }
   #profile-text {
     padding-right: 15px;
   }
