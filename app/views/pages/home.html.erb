@@ -26,94 +26,76 @@
 
 <h1 class="home-info-header text-center mx-2">In a rush? Check out our Featured Trips.</h1>
 
-<div class="border featured-trips-container">
-  <h3 class="mt-5 text-center">Fancy A Swim?</h3>
+<div class="featured-trips-container">
+  <h3 class="my-3 text-center">Let's Swim</h3>
   <div class="featured-trips-category-container">
-    <%= link_to journey_path(@sea_1), class:"feature-link" do %>
-      <div class="featured-card">
-        <%= image_tag asset_path("Saint-Malo.jpg"), class: "featured-card-img-top" %>
-        <div class="featured-card-body">
-          <h3 class="text-decoration-none featured-body-title">Saint Malo to Nantes</h3>
-          <div class="featured-card-text">
-            <h5>France for X days</h5>
-            <h5 class="text-decoration-none featured-body-type">🌊 Sea Trip 🌊</h5>
-          </div>
+    <%= link_to journey_path(@sea_1), class:"feature-link featured-card" do %>
+      <%= image_tag asset_path("Saint-Malo.jpg"), class: "featured-card-img-top" %>
+      <div class="featured-card-body">
+        <h3 class="text-decoration-none featured-body-title">Saint Malo to Nantes</h3>
+        <div class="featured-card-text">
+          <h5>France for X days</h5>
+          <h5 class="text-decoration-none featured-body-type">🌊 Sea Trip 🌊</h5>
         </div>
       </div>
     <% end %>
-
-    <%= link_to journey_path(@sea_2), class:"feature-link" do %>
-      <div class="featured-card">
-        <%= image_tag asset_path("La-Rochelle.jpg"), class: "featured-card-img-top" %>
-        <div class="featured-card-body">
-          <h3 class="text-decoration-none featured-body-title">La Rochelle to Ars-en-Ré</h3>
-          <div class="featured-card-text">
-            <h5>France for X days</h5>
-            <h5 class="text-decoration-none featured-body-type">🌊 Sea Trip 🌊</h5>
-          </div>
+    <%= link_to journey_path(@sea_2), class:"feature-link featured-card" do %>
+      <%= image_tag asset_path("La-Rochelle.jpg"), class: "featured-card-img-top" %>
+      <div class="featured-card-body">
+        <h3 class="text-decoration-none featured-body-title">La Rochelle to Ars-en-Ré</h3>
+        <div class="featured-card-text">
+          <h5>France for X days</h5>
+          <h5 class="text-decoration-none featured-body-type">🌊 Sea Trip 🌊</h5>
         </div>
       </div>
     <% end %>
-
-    <%= link_to journey_path(@sea_3), class:"feature-link" do %>
-      <div class="featured-card">
-        <%= image_tag asset_path("Biarritz.jpg"), class: "featured-card-img-top" %>
-        <div class="featured-card-body">
-          <h3 class="text-decoration-none featured-body-title">Biarritz</h3>
-          <div class="featured-card-text">
-            <h5>France for X days</h5>
-            <h5 class="text-decoration-none featured-body-type">🌊 Sea Trip 🌊</h5>
-          </div>
+    <%= link_to journey_path(@sea_3), class:"feature-link featured-card" do %>
+      <%= image_tag asset_path("Biarritz.jpg"), class: "featured-card-img-top" %>
+      <div class="featured-card-body">
+        <h3 class="text-decoration-none featured-body-title">Biarritz</h3>
+        <div class="featured-card-text">
+          <h5>France for X days</h5>
+          <h5 class="text-decoration-none featured-body-type">🌊 Sea Trip 🌊</h5>
         </div>
       </div>
     <% end %>
   </div>
-  <h3 class="mt-5 text-center">See the Mountains</h3>
+  <h3 class="my-3 text-center">See the Mountains</h3>
   <div class="featured-trips-category-container">
-    <%= link_to journey_path(@mountain_1), class:"feature-link" do %>
-      <div class="featured-card">
-        <%= image_tag asset_path("Aubenas.jpg"), class: "featured-card-img-top" %>
-        <div class="featured-card-body">
-          <h3 class="text-decoration-none featured-body-title">Aubenas to Lyon</h3>
-          <div class="featured-card-text">
-            <h5>France for X days</h5>
-            <h5 class="text-decoration-none featured-body-type">🏔 Mountain Trip 🏔</h5>
-          </div>
+    <%= link_to journey_path(@mountain_1), class:"feature-link featured-card" do %>
+      <%= image_tag asset_path("Aubenas.jpg"), class: "featured-card-img-top" %>
+      <div class="featured-card-body">
+        <h3 class="text-decoration-none featured-body-title">Aubenas to Lyon</h3>
+        <div class="featured-card-text">
+          <h5>France for X days</h5>
+          <h5 class="text-decoration-none featured-body-type">🏔 Mountain Trip 🏔</h5>
         </div>
       </div>
     <% end %>
-
-    <%= link_to journey_path(@mountain_2), class:"feature-link" do %>
-      <div class="featured-card">
-        <%= image_tag asset_path("Annecy.jpg"), class: "featured-card-img-top" %>
-        <div class="featured-card-body">
-          <h3 class="text-decoration-none featured-body-title">Annecy to Chambéry</h3>
-          <div class="featured-card-text">
-            <h5>France for X days</h5>
-            <h5 class="text-decoration-none featured-body-type">🏔 Mountain Trip 🏔</h5>
-          </div>
+    <%= link_to journey_path(@mountain_2), class:"feature-link featured-card" do %>
+      <%= image_tag asset_path("Annecy.jpg"), class: "featured-card-img-top" %>
+      <div class="featured-card-body">
+        <h3 class="text-decoration-none featured-body-title">Annecy to Chambéry</h3>
+        <div class="featured-card-text">
+          <h5>France for X days</h5>
+          <h5 class="text-decoration-none featured-body-type">🏔 Mountain Trip 🏔</h5>
         </div>
       </div>
     <% end %>
-
-    <%= link_to journey_path(@mountain_3), class:"feature-link" do %>
-      <div class="featured-card">
-        <%= image_tag asset_path("Grenoble.jpg"), class: "featured-card-img-top" %>
-        <div class="featured-card-body">
-          <h3 class="text-decoration-none featured-body-title">Grenoble</h3>
-          <div class="featured-card-text">
-            <h5>France for X days</h5>
-            <h5 class="text-decoration-none featured-body-type">🏔 Mountain Trip 🏔</h5>
-          </div>
+    <%= link_to journey_path(@mountain_3), class:"feature-link featured-card" do %>
+      <%= image_tag asset_path("Grenoble.jpg"), class: "featured-card-img-top" %>
+      <div class="featured-card-body">
+        <h3 class="text-decoration-none featured-body-title">Grenoble</h3>
+        <div class="featured-card-text">
+          <h5>France for X days</h5>
+          <h5 class="text-decoration-none featured-body-type">🏔 Mountain Trip 🏔</h5>
         </div>
       </div>
     <% end %>
   </div>
-  <h3 class="mt-5 text-center">Big City Life</h3>
+  <h3 class="my-3 text-center">Big City Life</h3>
   <div class="featured-trips-category-container">
-
-  <%= link_to journey_path(@major_city_1), class:"feature-link" do %>
-    <div class="featured-card">
+    <%= link_to journey_path(@major_city_1), class:"feature-link featured-card" do %>
       <%= image_tag asset_path("Paris.jpg"), class: "featured-card-img-top" %>
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Paris to Versailles</h3>
@@ -122,11 +104,8 @@
           <h5 class="text-decoration-none featured-body-type">🌉 City 🌉</h5>
         </div>
       </div>
-  <% end %>
-  </div>
-
-  <%= link_to journey_path(@major_city_2), class:"feature-link" do %>
-    <div class="featured-card">
+    <% end %>
+    <%= link_to journey_path(@major_city_2), class:"feature-link featured-card" do %>
       <%= image_tag asset_path("Lille.jpg"), class: "featured-card-img-top" %>
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Lille to Strasbourg</h3>
@@ -135,26 +114,21 @@
           <h5 class="text-decoration-none featured-body-type">🌉 City 🌉</h5>
         </div>
       </div>
-  <% end %>
-    </div>
-    <%= link_to journey_path(@major_city_3), class:"feature-link" do %>
-      <div class="featured-card">
-        <%= image_tag asset_path("Lyon.jpg"), class: "featured-card-img-top" %>
-        <div class="featured-card-body">
-          <h3 class="text-decoration-none featured-body-title">Lyon</h3>
-          <div class="featured-card-text">
-            <h5>France for X days</h5>
-            <h5 class="text-decoration-none featured-body-type">🌉 City 🌉</h5>
-          </div>
-        </div>
     <% end %>
+    <%= link_to journey_path(@major_city_3), class:"feature-link featured-card" do %>
+      <%= image_tag asset_path("Lyon.jpg"), class: "featured-card-img-top" %>
+      <div class="featured-card-body">
+        <h3 class="text-decoration-none featured-body-title">Lyon</h3>
+        <div class="featured-card-text">
+          <h5>France for X days</h5>
+          <h5 class="text-decoration-none featured-body-type">🌉 City 🌉</h5>
+        </div>
       </div>
+    <% end %>
   </div>
-  <h3 class="mt-5 text-center">For The Foodies</h3>
+  <h3 class="my-3 text-center">For The Foodies</h3>
   <div class="featured-trips-category-container">
-
-  <%= link_to journey_path(@food_1), class:"feature-link" do %>
-    <div class="featured-card">
+    <%= link_to journey_path(@food_1), class:"feature-link featured-card" do %>
       <%= image_tag asset_path("Toulouse.jpg"), class: "featured-card-img-top" %>
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Toulouse to Bordeaux</h3>
@@ -163,10 +137,8 @@
           <h5 class="text-decoration-none featured-body-type">🍕 Foodie 🍕</h5>
         </div>
       </div>
-  <% end %>
-  </div>
-  <%= link_to journey_path(@food_1), class:"feature-link" do %>
-    <div class="featured-card">
+    <% end %>
+    <%= link_to journey_path(@food_1), class:"feature-link featured-card" do %>
       <%= image_tag asset_path("Marseille.jpg"), class: "featured-card-img-top" %>
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Marseille to Lyon</h3>
@@ -175,10 +147,8 @@
           <h5 class="text-decoration-none featured-body-type">🍕 Foodie 🍕</h5>
         </div>
       </div>
-  <% end %>
-  </div>
-  <%= link_to journey_path(@food_1), class:"feature-link" do %>
-    <div class="featured-card">
+    <% end %>
+    <%= link_to journey_path(@food_1), class:"feature-link featured-card" do %>
       <%= image_tag asset_path("Strasbourg.jpg"), class: "featured-card-img-top" %>
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Strasbourg</h3>
@@ -187,9 +157,10 @@
           <h5 class="text-decoration-none featured-body-type">🍕 Foodie 🍕</h5>
         </div>
       </div>
-  <% end %>
+    <% end %>
+  <%# close category %>
   </div>
-  </div>
+  <%# close main container %>
 </div>
 
 
@@ -197,15 +168,15 @@
 <%# displays count of users, journeys, cities %>
 <div id="user-city-trip-banner" class="home-info-container d-flex align-content-center justify-content-center">
   <div class="home-info-card">
-    <div class="home-info-segment">
+    <div class="home-info-segment city-trip-text">
           <%# <%= image_tag asset_path("c-d.svg"), width: "400", height: "300" %>
           <p class="fs-4 mt-4"> Already <strong> <%= CityJourney.count + 256 %> </strong> cities visited </p>
     </div>
-    <div class="home-info-segment middle-segment-borders">
+    <div class="home-info-segment city-trip-text middle-segment-borders">
         <%# <%= image_tag asset_path("w-d.svg"), width: "400", height: "300" %>
         <p class="fs-4 mt-4"> <strong> <%= Journey.count + 57 %> </strong> trips planned with Trips Selector ! </p>
     </div>
-    <div class="home-info-segment">
+    <div class="home-info-segment city-trip-text">
       <%# <%= image_tag asset_path("p-d.svg"), width: "400", height: "300" %>
       <p class="fs-4 mt-4"> <strong> <%= User.count + 57 %> </strong> users satisfied and travelling!</p>
     </div>

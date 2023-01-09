@@ -8,7 +8,6 @@ export default class extends Controller {
   }
 
   update() {
-    console.log("hello scrolling window")
     scroll_direction = (document.body.getBoundingClientRect()).top > scroll_position ? 'up' : 'down';
     scroll_position = (document.body.getBoundingClientRect()).top;
 

@@ -1,7 +1,4 @@
 .featured-trips-container {
-  margin-left: 4%;
-  margin-right: 4%;
-  border-radius: 10px;
   margin-bottom: 3%;
 }
 
@@ -14,14 +11,14 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 5vh;
+  gap: 1vh;
 }
 
 .featured-card-img-top {
   border-radius: 10px;
   object-fit: cover;
-  height: 75vw;
-  width: 75vw;
+  height: 80vw;
+  width: 80vw;
 }
 // link that surrounds card
 .feature-link {
@@ -58,8 +55,7 @@
 
 
 .featured-card-body {
-  width: 75vw;
-  height: 20vh;
+  width: 80vw;
   font-family: $body-font;
   a {
     text-decoration: none;
@@ -100,14 +96,14 @@
 
 // tablets
 @media screen and (min-width: 500px) {
-}
 
-// laptops
-@media screen and (min-width: 992px) {
-
-}
-// normal desktop
-@media screen and (min-width: 1200px) {
+  .featured-trips-container {
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    border: 1px solid #DEE2E6;
+  }
 
   .featured-card {
     border-radius: 10px;
@@ -123,17 +119,26 @@
   }
 
 
-.featured-trips-category-container {
-  margin-top: 1%;
-  padding: 1%;
-  padding-top: 2%;
-  margin-bottom: 1%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
+  .featured-trips-category-container {
+    margin-top: 1%;
+    padding: 1%;
+    padding-top: 2%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    // gap: 0;
+  }
 }
+
+// laptops
+@media screen and (min-width: 992px) {
+
+}
+// normal desktop
+@media screen and (min-width: 1200px) {
 
 
 }

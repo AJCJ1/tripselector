@@ -7,7 +7,7 @@
 }
 
 .foot-link {
-  width:2.2%;
+  width:15%;
   margin: auto;
 }
 
@@ -18,4 +18,12 @@
 
 .copyright-box {
   background-color: $gray;
+}
+
+// laptops
+@media screen and (min-width: 992px) {
+  .foot-link {
+    width:2.2%;
+    margin: auto;
+  }
 }
