@@ -94,8 +94,16 @@
   }
 }
 
+.mountains {
+  display: none;
+}
+
 // tablets
 @media screen and (min-width: 500px) {
+
+  .mountains {
+    display: inherit;
+  }
 
   .featured-trips-container {
     margin-left: 4%;
@@ -107,17 +115,18 @@
 
   .featured-card {
     border-radius: 10px;
-    box-shadow: 0px 0px 5px darkgrey;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 30%;
+    height: fit-content;
+    width: 27.5vw;
     overflow: hidden;
-    margin: 1.5%;
   }
-
+  .featured-card-img-top {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 27.5vw;
+    width: 27.5vw;
+  }
 
   .featured-trips-category-container {
     margin-top: 1%;
@@ -128,8 +137,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 5vh;
-    // gap: 0;
+    gap: 2vh;
+  }
+
+  .featured-card-body {
+    width: 27.5vw;
   }
 }
 
@@ -140,7 +152,12 @@
 // normal desktop
 @media screen and (min-width: 1200px) {
 
-
+  .featured-card-text h5 {
+    font-size: 1.2rem;
+  }
+  .featured-body-title {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 1200px) and (min-height:525px) {
 
