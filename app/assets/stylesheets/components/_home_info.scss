@@ -1,20 +1,18 @@
 .home-info-container{
-display: inline-flex;
-margin-left: 4%;
-margin-right: 4%;
-border:none;
-justify-content: center;
-align-items: center;
-border-radius: 10px;
-background-color: #c3e0e0;
+  display: inline-flex;
+  margin-left: 4%;
+  margin-right: 4%;
+  border:none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #c3e0e0;
 }
-
 .home-info-header {
   margin-top: 5vh;
   margin-bottom: 5vh;
   color: $black;
 }
-
 .home-info-card {
   display: inline-flex;
   margin: 2%;
@@ -23,7 +21,6 @@ background-color: #c3e0e0;
   align-items: center;
   flex-direction: column;
 }
-
 .home-info-segment {
   width: 100%;
   height: 75%;
@@ -40,11 +37,6 @@ background-color: #c3e0e0;
     height: 250px;
   }
 }
-
-// tablets
-@media screen and (min-width: 500px) {
-}
-
 // laptops
 @media screen and (min-width: 992px) {
   .home-info-card {
@@ -78,16 +70,4 @@ background-color: #c3e0e0;
     border-left: 1px solid $white;
     border-right: 1px solid $white;
   }
-}
-// normal desktop
-@media screen and (min-width: 1200px) {
-
-
-}
-@media screen and (min-width: 1200px) and (min-height:525px) {
-
-}
-// bigger monitors
-@media screen and (min-width: 1600px) {
-
 }

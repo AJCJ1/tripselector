@@ -8,27 +8,22 @@
   color:$gray;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-
 .form-img {
   background:
-  /* top, transparent black, faked with gradient */
-  linear-gradient(
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2)
-  ),
-  /* bottom, image */
-  url("mountain.jpeg");
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("mountain.jpeg");
   background-position: center;
   object-fit:cover;
   background-size: cover;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-
 .form-inputs {
   margin: 2.5%;
 }
-
 .adv-heading {
   margin-top:25%;
   margin-left: 10%;
@@ -36,19 +31,15 @@
   color: $white;
   align-self: center;
 }
-
 .edit-form {
   display: inline-flex;
 }
-
 .edit-form > div {
   margin: 5px;
 }
-
 .category-selector {
   margin-bottom: 5px;
 }
-
 .svg-new-left {
   position: absolute;
   top: 25%;

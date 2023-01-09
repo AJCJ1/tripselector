@@ -5,22 +5,17 @@
     color:$lighter-black;
   }
 }
-
 .foot-link {
   width:15%;
   margin: auto;
 }
-
 .footer-icon {
   margin: auto;
   width: min-content;
 }
-
 .copyright-box {
   background-color: $gray;
 }
-
-
 // tablets
 @media screen and (min-width: 500px) {
   .foot-link {
@@ -28,8 +23,6 @@
     margin: auto;
   }
 }
-
-
 // laptops
 @media screen and (min-width: 992px) {
   .foot-link {
@@ -37,7 +30,6 @@
     margin: auto;
   }
 }
-
 // bigger monitors
 @media screen and (min-width: 1600px) {
   .foot-link {

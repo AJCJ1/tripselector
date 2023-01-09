@@ -1,10 +1,8 @@
-
 .card-body a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
-
 .card {
   border-radius: 8px;
   height: 29rem;
@@ -12,22 +10,18 @@
   margin-top: 7px;
   box-shadow: 3px 3px 3px lightgray;
 }
-
 #dates p {
   color: black;
   font-weight: lighter !important;
   font-style: italic;
 }
-
 .card-body p {
   color: black;
 }
-
 .card-page-container {
   width: 80%;
   margin: auto;
 }
-
 .cards-container {
   display: flex;
   display: grid;
@@ -35,15 +29,12 @@
   justify-items: center;
   align-items: center;
 }
-
 .dashboard-image{
   border-radius: 5px;
 }
-
 #dashboard-card{
   height: 22rem;
 }
-
 #dashboard-button{
   background-color: transparent;
   border: none;
@@ -55,27 +46,22 @@
   position:absolute; bottom:0; right:0;
   margin: 10px;
 }
-
 #trash-icon{
   font-size: medium;
   color: $black;
 }
-
 .db-banner {
   height:500px;
   display:flex;
   flex-direction: column;
   justify-content:center;
   align-content:center;
-  // background-image: url("db_banner.jpg");
   background:
-        /* top, transparent black, faked with gradient */
-        linear-gradient(
-          rgba(0, 0, 0, 0.2),
-          rgba(0, 0, 0, 0.2)
-        ),
-        /* bottom, image */
-        url("Db_banner.jpg");
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("Db_banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

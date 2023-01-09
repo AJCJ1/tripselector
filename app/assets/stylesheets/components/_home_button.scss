@@ -26,7 +26,6 @@
   gap: 5vh;
   position: relative;
 }
-
 .trip-btn-cust {
   text-decoration: none;
   background-color: $button;
@@ -36,8 +35,6 @@
   margin-bottom: 8px;
   margin-left: 8px;
 }
-
-
 // tablets
 @media screen and (min-width: 500px) {
   .home-cta-button {
@@ -48,7 +45,6 @@
     gap: 5vh;
   }
 }
-
 // laptops
 @media screen and (min-width: 992px) {
   .home-cta-button {
@@ -56,16 +52,4 @@
     padding: 2.5%;
     width: 30%;
   }
-}
-// normal desktop
-@media screen and (min-width: 1200px) {
-
-
-}
-@media screen and (min-width: 1200px) and (min-height:525px) {
-
-}
-// bigger monitors
-@media screen and (min-width: 1600px) {
-
 }

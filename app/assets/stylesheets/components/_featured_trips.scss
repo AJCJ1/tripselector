@@ -1,7 +1,6 @@
 .featured-trips-container {
   margin-bottom: 3%;
 }
-
 .featured-trips-category-container {
   margin-top: 1%;
   padding: 1%;
@@ -13,14 +12,12 @@
   align-items: center;
   gap: 1vh;
 }
-
 .featured-card-img-top {
   border-radius: 10px;
   object-fit: cover;
   height: 80vw;
   width: 80vw;
 }
-// link that surrounds card
 .feature-link {
   text-decoration: none;
   color: $black;
@@ -42,18 +39,7 @@
   width: 100%;
   overflow: hidden;
   transition: 0.3s ease;
-  &:hover {
-    // box-shadow: $box-shadow-hover-card;
-    transition: 0.3s ease;
-  }
 }
-
-// things to do
-// style trip type
-
-
-
-
 .featured-card-body {
   width: 80vw;
   font-family: $body-font;
@@ -63,7 +49,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .featured-body-title {
   color:$black;
   font-size: 1.2rem;
@@ -80,10 +65,6 @@
   height: min-content;
   margin-top: 0.3rem;
 }
-
-// trip type bottom right
-// title always on one line
-
 .featured-card-text {
   display: flex;
   align-items: baseline;
@@ -93,18 +74,14 @@
     font-size: 0.8rem;
   }
 }
-
 .mountains {
   display: none;
 }
-
 // tablets
 @media screen and (min-width: 500px) {
-
   .mountains {
     display: inherit;
   }
-
   .featured-trips-container {
     margin-left: 4%;
     margin-right: 4%;
@@ -112,7 +89,6 @@
     margin-bottom: 3%;
     border: 1px solid #DEE2E6;
   }
-
   .featured-card {
     border-radius: 10px;
     display: flex;
@@ -127,7 +103,6 @@
     height: 27.5vw;
     width: 27.5vw;
   }
-
   .featured-trips-category-container {
     margin-top: 1%;
     padding: 1%;
@@ -139,30 +114,16 @@
     align-items: center;
     gap: 2vh;
   }
-
   .featured-card-body {
     width: 27.5vw;
   }
 }
-
-// laptops
-@media screen and (min-width: 992px) {
-
-}
-// normal desktop
+// Average desktop
 @media screen and (min-width: 1200px) {
-
   .featured-card-text h5 {
     font-size: 1.2rem;
   }
   .featured-body-title {
     font-size: 1.5rem;
   }
-}
-@media screen and (min-width: 1200px) and (min-height:525px) {
-
-}
-// bigger monitors
-@media screen and (min-width: 1600px) {
-
 }
