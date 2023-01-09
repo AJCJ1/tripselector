@@ -25,139 +25,174 @@
 </div>
 
 <h1 class="home-info-header text-center mx-2">In a rush? Check out our Featured Trips.</h1>
+
 <div class="border featured-trips-container">
   <h3 class="mt-5 text-center">Fancy A Swim?</h3>
   <div class="featured-trips-category-container">
-    <div class="featured-card">
-      <%= image_tag asset_path("Saint-Malo.jpg"), class: "featured-card-img-top" %>
-      <div class="featured-card-body">
-        <%= link_to "Saint-Malo to Nantes", journey_path(@sea_1), class:"text-decoration-none featured-body-title" %>
-
-
-        <%# show only country, amount of days, and style %>
-          <p class="featured-card-text">
-            For an amazing week in and around Britany, discovering one of the most well preserved region in France.
-          </p>
+    <%= link_to journey_path(@sea_1), class:"feature-link" do %>
+      <div class="featured-card">
+        <%= image_tag asset_path("Saint-Malo.jpg"), class: "featured-card-img-top" %>
+        <div class="featured-card-body">
+          <h3 class="text-decoration-none featured-body-title">Saint Malo to Nantes</h3>
+          <div class="featured-card-text">
+            <h5>France for X days</h5>
+            <h5 class="text-decoration-none featured-body-type">🌊 Sea Trip 🌊</h5>
+          </div>
+        </div>
       </div>
-    </div>
+    <% end %>
 
-    <div class="featured-card">
-      <%= image_tag asset_path("La-Rochelle.jpg"), class: "featured-card-img-top" %>
-      <div class="featured-card-body">
-        <%= link_to "La Rochelle to Ars-en-Ré", journey_path(@sea_2), class:"text-decoration-none featured-body-title" %>
-        <p class="featured-card-text">
-          A seaside weekend wandering the pretiest beaches on the Atlantic coast.
-        </p>
+    <%= link_to journey_path(@sea_2), class:"feature-link" do %>
+      <div class="featured-card">
+        <%= image_tag asset_path("La-Rochelle.jpg"), class: "featured-card-img-top" %>
+        <div class="featured-card-body">
+          <h3 class="text-decoration-none featured-body-title">La Rochelle to Ars-en-Ré</h3>
+          <div class="featured-card-text">
+            <h5>France for X days</h5>
+            <h5 class="text-decoration-none featured-body-type">🌊 Sea Trip 🌊</h5>
+          </div>
+        </div>
       </div>
-    </div>
+    <% end %>
 
-    <div class="featured-card">
-      <%= image_tag asset_path("Biarritz.jpg"), class: "featured-card-img-top" %>
-      <div class="featured-card-body">
-        <%= link_to "Biarritz", journey_path(@sea_3), class:"text-decoration-none featured-body-title" %>
-        <p class="featured-card-text">
-          Tired of California surfing? Try Biarritz for a change.
-        </p>
+    <%= link_to journey_path(@sea_3), class:"feature-link" do %>
+      <div class="featured-card">
+        <%= image_tag asset_path("Biarritz.jpg"), class: "featured-card-img-top" %>
+        <div class="featured-card-body">
+          <h3 class="text-decoration-none featured-body-title">Biarritz</h3>
+          <div class="featured-card-text">
+            <h5>France for X days</h5>
+            <h5 class="text-decoration-none featured-body-type">🌊 Sea Trip 🌊</h5>
+          </div>
+        </div>
       </div>
-    </div>
+    <% end %>
   </div>
-  <h3 class="mt-5 text-center">Get High</h3>
+  <h3 class="mt-5 text-center">See the Mountains</h3>
   <div class="featured-trips-category-container">
-    <div class="featured-card">
+    <%= link_to journey_path(@mountain_1), class:"feature-link" do %>
+      <div class="featured-card">
         <%= image_tag asset_path("Aubenas.jpg"), class: "featured-card-img-top" %>
         <div class="featured-card-body">
-            <%= link_to "Aubenas to Lyon", journey_path(@mountain_1), class:"text-decoration-none featured-body-title" %>
-            <p class="featured-card-text">
-                A week in Auvergne, mixing good food in Lyon's bouchons (local restaurants) and some kayaking in France's nicest gorges.
-            </p>
+          <h3 class="text-decoration-none featured-body-title">Aubenas to Lyon</h3>
+          <div class="featured-card-text">
+            <h5>France for X days</h5>
+            <h5 class="text-decoration-none featured-body-type">🏔 Mountain Trip 🏔</h5>
+          </div>
         </div>
-    </div>
-
-    <div class="featured-card">
-      <%= image_tag asset_path("Annecy.jpg"), class: "featured-card-img-top" %>
-      <div class="featured-card-body">
-          <%= link_to "Annecy to Chambéry", journey_path(@mountain_2), class:"text-decoration-none featured-body-title" %>
-          <p class="featured-card-text">
-              A week-end near the 2 biggest and wildest lakes in France. Skiing is also on the menu !
-          </p>
       </div>
-    </div>
+    <% end %>
 
-    <div class="featured-card">
-      <%= image_tag asset_path("Grenoble.jpg"), class: "featured-card-img-top" %>
-      <div class="featured-card-body">
-          <%= link_to "Grenoble", journey_path(@mountain_3), class:"text-decoration-none featured-body-title" %>
-          <p class="featured-card-text">
-              Grenoble is the city to visit if your two passions in life are cheese and skiing.
-          </p>
+    <%= link_to journey_path(@mountain_2), class:"feature-link" do %>
+      <div class="featured-card">
+        <%= image_tag asset_path("Annecy.jpg"), class: "featured-card-img-top" %>
+        <div class="featured-card-body">
+          <h3 class="text-decoration-none featured-body-title">Annecy to Chambéry</h3>
+          <div class="featured-card-text">
+            <h5>France for X days</h5>
+            <h5 class="text-decoration-none featured-body-type">🏔 Mountain Trip 🏔</h5>
+          </div>
+        </div>
       </div>
-    </div>
+    <% end %>
+
+    <%= link_to journey_path(@mountain_3), class:"feature-link" do %>
+      <div class="featured-card">
+        <%= image_tag asset_path("Grenoble.jpg"), class: "featured-card-img-top" %>
+        <div class="featured-card-body">
+          <h3 class="text-decoration-none featured-body-title">Grenoble</h3>
+          <div class="featured-card-text">
+            <h5>France for X days</h5>
+            <h5 class="text-decoration-none featured-body-type">🏔 Mountain Trip 🏔</h5>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
   <h3 class="mt-5 text-center">Big City Life</h3>
   <div class="featured-trips-category-container">
-    <div class="featured-card">
-      <%= image_tag asset_path("Paris.jpg"), class: "featured-card-img-top d-flex", width: "400", height: "300" %>
-      <div class="featured-card-body">
-          <%= link_to "Paris to Versailles", journey_path(@major_city_1), class:"text-decoration-none featured-body-title" %>
-          <p class="featured-card-text">
-            No time but want to be able to say you've been to France? All you need is a weekend to see the Eiffel Tower and Chateau de Versailles and you'll be a local.
-          </p>
-      </div>
-    </div>
 
+  <%= link_to journey_path(@major_city_1), class:"feature-link" do %>
+    <div class="featured-card">
+      <%= image_tag asset_path("Paris.jpg"), class: "featured-card-img-top" %>
+      <div class="featured-card-body">
+        <h3 class="text-decoration-none featured-body-title">Paris to Versailles</h3>
+        <div class="featured-card-text">
+          <h5>France for X days</h5>
+          <h5 class="text-decoration-none featured-body-type">🌉 City 🌉</h5>
+        </div>
+      </div>
+  <% end %>
+  </div>
+
+  <%= link_to journey_path(@major_city_2), class:"feature-link" do %>
     <div class="featured-card">
       <%= image_tag asset_path("Lille.jpg"), class: "featured-card-img-top" %>
       <div class="featured-card-body">
-          <%= link_to "Lille to Strasbourg", journey_path(@major_city_2), class:"text-decoration-none featured-body-title" %>
-          <p class="featured-card-text">
-            With the nicest French around, and the best Christmas market in the country, this will change your mind about the French.
-          </p>
+        <h3 class="text-decoration-none featured-body-title">Lille to Strasbourg</h3>
+        <div class="featured-card-text">
+          <h5>France for X days</h5>
+          <h5 class="text-decoration-none featured-body-type">🌉 City 🌉</h5>
+        </div>
       </div>
+  <% end %>
     </div>
-
-    <div class="featured-card">
-      <%= image_tag asset_path("Lyon.jpg"), class: "featured-card-img-top" %>
-      <div class="featured-card-body">
-          <%= link_to "Lyon", journey_path(@major_city_3), class:"text-decoration-none featured-body-title" %>
-          <p class="featured-card-text">
-            Spend a week-end in what used to be France's capital city, back when the French didn't exist.
-          </p>
+    <%= link_to journey_path(@major_city_3), class:"feature-link" do %>
+      <div class="featured-card">
+        <%= image_tag asset_path("Lyon.jpg"), class: "featured-card-img-top" %>
+        <div class="featured-card-body">
+          <h3 class="text-decoration-none featured-body-title">Lyon</h3>
+          <div class="featured-card-text">
+            <h5>France for X days</h5>
+            <h5 class="text-decoration-none featured-body-type">🌉 City 🌉</h5>
+          </div>
+        </div>
+    <% end %>
       </div>
-    </div>
   </div>
-      <h3 class="mt-5 text-center">For The Foodies</h3>
+  <h3 class="mt-5 text-center">For The Foodies</h3>
   <div class="featured-trips-category-container">
+
+  <%= link_to journey_path(@food_1), class:"feature-link" do %>
     <div class="featured-card">
       <%= image_tag asset_path("Toulouse.jpg"), class: "featured-card-img-top" %>
       <div class="featured-card-body">
-        <%= link_to "Toulouse to Bordeaux", journey_path(@food_1), class:"text-decoration-none featured-body-title" %>
-        <p class="featured-card-text">
-          Ok, cut the chit chat, take me to the South-east of France to eat duck liver! I'm preparing my winter body.
-        </p>
+        <h3 class="text-decoration-none featured-body-title">Toulouse to Bordeaux</h3>
+        <div class="featured-card-text">
+          <h5>France for X days</h5>
+          <h5 class="text-decoration-none featured-body-type">🍕 Foodie 🍕</h5>
+        </div>
       </div>
-    </div>
-
+  <% end %>
+  </div>
+  <%= link_to journey_path(@food_1), class:"feature-link" do %>
     <div class="featured-card">
       <%= image_tag asset_path("Marseille.jpg"), class: "featured-card-img-top" %>
       <div class="featured-card-body">
-        <%= link_to "Marseille to Lyon", journey_path(@food_2), class:"text-decoration-none featured-body-title" %>
-        <p class="featured-card-text">
-          Seafood and the french gastronomy capital city all in a weekend, this is how you discover the finest cuisine in the world.
-        </p>
+        <h3 class="text-decoration-none featured-body-title">Marseille to Lyon</h3>
+        <div class="featured-card-text">
+          <h5>France for X days</h5>
+          <h5 class="text-decoration-none featured-body-type">🍕 Foodie 🍕</h5>
+        </div>
       </div>
-    </div>
-
+  <% end %>
+  </div>
+  <%= link_to journey_path(@food_1), class:"feature-link" do %>
     <div class="featured-card">
       <%= image_tag asset_path("Strasbourg.jpg"), class: "featured-card-img-top" %>
       <div class="featured-card-body">
-        <%= link_to "Strasbourg", journey_path(@food_3), class:"text-decoration-none featured-body-title" %>
-        <p class="featured-card-text">
-          Can't decide if you prefer French food or German beer? Strasbourg is the place to combine your two love.
-        </p>
+        <h3 class="text-decoration-none featured-body-title">Strasbourg</h3>
+        <div class="featured-card-text">
+          <h5>France for X days</h5>
+          <h5 class="text-decoration-none featured-body-type">🍕 Foodie 🍕</h5>
+        </div>
       </div>
-    </div>
+  <% end %>
+  </div>
   </div>
 </div>
+
+
 
 <%# displays count of users, journeys, cities %>
 <div id="user-city-trip-banner" class="home-info-container d-flex align-content-center justify-content-center">

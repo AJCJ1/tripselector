@@ -20,6 +20,9 @@ $warning:    $orange;
 // Buttons & inputs' radius
 $border-radius:    15px;
 $border-radius-lg: 2px;
-$border-radius-sm: 2px;
+$border-radius-sm: 10px;
 
 // Override other variables below!
+$box-shadow: 0px 2px 4px 0px #29292937;
+$box-shadow-hover: 4px 4px 0px rgba(167, 243, 208, 1);
+$box-shadow-hover-card: 0px 4px 8px 0px #29292973;
