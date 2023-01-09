@@ -21,3 +21,9 @@ Back-end :
 Integrations :
 
 - Mapbox API
+
+
+Noteable changes that are in development:
+
+- Removal of countries not yet seeded
+- Making website responsive to majority of device sizes
