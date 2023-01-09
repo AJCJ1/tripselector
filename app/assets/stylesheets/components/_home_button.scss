@@ -1,19 +1,31 @@
-#home-button {
-  padding:2.5%;
+.home-cta-button {
+  padding: 8% 3%;
+  border-radius: $border-radius;
   text-align: center;
-  width: 50%;
-  margin: auto;
-  position: absolute;
-  top: 67%;
-  left: 25%;
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  font-size: xx-large;
+  width: 65%;
+  margin: 0 auto;
+  left: 0;
+  position: relative;
+  background-color: $gogreen;
+  text-decoration: none;
+  font-size: large;
+  color: $white;
+  box-shadow: $box-shadow;
+  transition: 0.3s ease;
 }
-
-
+.home-cta-button:hover {
+  background-color: $hgogreen;
+  color: $white;
+  box-shadow: $box-shadow-hover;
+  transition: 0.3s ease;
+}
+.head-button-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5vh;
+  position: relative;
+}
 .trip-btn-cust {
   text-decoration: none;
   background-color: $button;
@@ -22,4 +34,22 @@
   color:$white;
   margin-bottom: 8px;
   margin-left: 8px;
+}
+// tablets
+@media screen and (min-width: 500px) {
+  .home-cta-button {
+    font-size: x-large;
+    padding: 4.5%;
+  }
+  .head-button-cont {
+    gap: 5vh;
+  }
+}
+// laptops
+@media screen and (min-width: 992px) {
+  .home-cta-button {
+    font-size: xx-large;
+    padding: 2.5%;
+    width: 30%;
+  }
 }

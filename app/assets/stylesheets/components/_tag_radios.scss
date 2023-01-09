@@ -3,19 +3,16 @@
   flex-wrap: wrap;
   overflow: hidden;
 }
-
 .category-item {
   width: 100%;
   margin-bottom: 8px;
   border: 0.2px solid #CED4DA;
   border-radius: 2px;
 }
-
 .category-selector {
   position: absolute;
   transform: scale(0);
 }
-
 .category-selector + label {
   background-color: #F4F4F4;
   display: block;
@@ -29,7 +26,6 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
 .category-selector:checked + label {
   background-color:$button-hover;
   color:white;
@@ -40,32 +36,23 @@
   color:white;
   transition: 0.2s ease;
 }
-
-
 #snippet_category_ruby + label {
   color: #FD1015;
 }
-
 #snippet_category_ruby:checked + label {
   background-color: #FD1015;
   border-color: #FD1015;
 }
-
-
 #snippet_category_javascript + label {
   color: #FFC65A;
 }
-
 #snippet_category_javascript:checked + label {
   background-color: #FFC65A;
   border-color: #FFC65A;
 }
-
-
 #snippet_category_css + label {
   color: #62DDF5;
 }
-
 #snippet_category_css:checked + label {
   background-color: #62DDF5;
   border-color: #62DDF5;

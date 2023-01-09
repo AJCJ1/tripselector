@@ -1,20 +1,14 @@
-// Specific CSS for your home-page
-
 .home-banner {
-  height:70vh;
+  height:90vh;
   display:flex;
   flex-direction: column;
   justify-content:center;
   align-content:center;
-  // background-image: url("home_banner.jpg");
   background:
-        /* top, transparent black, faked with gradient */
-        linear-gradient(
-          rgba(0, 0, 0, 0.2),
-          rgba(0, 0, 0, 0.2)
-        ),
-        /* bottom, image */
-        url("home-banner-bg.jpeg");
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -25,42 +19,21 @@
     text-rendering: optimizelegibility;
     display: flex;
     justify-content:center;
-    align-content:center;
+    text-align: center;
+    align-items:center;
     height: min-content;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
   }
 }
-
+.home-banner-video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90vh;
+  width: 100vw;
+}
 .centered-text{
   width: 50%;
   margin: auto;
 }
 
-.home-button {
-  color: white;
-  background-color: #164DB7;
-  border-radius: 5px;
-  padding: 5px;
-  text-align: center;
-  width: 60%;
-  margin: auto;
-  a {
-    text-decoration: none;
-    color: white;
-  }
-}
-
-.home-card {
-  border-radius: 8px;
-  margin-bottom: 7px;
-  margin-top: 7px;
-  height: 27rem;
-  background-color: rgb(244, 244, 244);
-  border-width: 1px;
-  border-color: rgba(41, 41, 41, 0.175);
-  border-style: solid;
-}
-
-.home-card-body{
-  padding: 3px;
-}

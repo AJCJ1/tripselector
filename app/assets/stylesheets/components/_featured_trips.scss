@@ -1,17 +1,6 @@
-
-.featured-title {
-  text-align: center;
-  margin: 2%;
-  box-shadow: none;
-}
-
 .featured-trips-container {
-  margin-left: 4%;
-  margin-right: 4%;
-  border-radius: 10px;
   margin-bottom: 3%;
 }
-
 .featured-trips-category-container {
   margin-top: 1%;
   padding: 1%;
@@ -21,47 +10,120 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 1vh;
 }
-
 .featured-card-img-top {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
   object-fit: cover;
-  height: 60%;
-  width: 100%;
+  height: 80vw;
+  width: 80vw;
 }
-
+.feature-link {
+  text-decoration: none;
+  color: $black;
+  &:hover {
+    color: $lighter-black;
+    h3 {
+      color: $lighter-black;
+    }
+  }
+}
 .featured-card {
   border-radius: 10px;
-  box-shadow: 0px 0px 5px darkgrey;
+  // box-shadow: $box-shadow;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 30%;
+  width: 100%;
   overflow: hidden;
-  margin: 1.5%;
+  transition: 0.3s ease;
 }
-
 .featured-card-body {
-  height: 20vh;
+  width: 80vw;
   font-family: $body-font;
-  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
   display: flex;
   flex-direction: column;
 }
-
 .featured-body-title {
-  color:$gray;
-  font-size: 1.5rem;
-  padding: 0.8rem;
-  text-align: center;
+  color:$black;
+  font-size: 1.2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.1rem;
+  margin: 0;
+  white-space: nowrap;
 }
-
+.featured-body-type {
+  color:$black;
+  font-size: 1rem;
+  margin-bottom: 0;
+  white-space: nowrap;
+  height: min-content;
+  margin-top: 0.3rem;
+}
 .featured-card-text {
-  padding: 1.5rem;
-  p {
-    height: min-content;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  h5 {
+    color: $gray;
+    font-size: 0.8rem;
+  }
+}
+.mountains {
+  display: none;
+}
+// tablets
+@media screen and (min-width: 500px) {
+  .mountains {
+    display: inherit;
+  }
+  .featured-trips-container {
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    border: 1px solid #DEE2E6;
+  }
+  .featured-card {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: 27.5vw;
+    overflow: hidden;
+  }
+  .featured-card-img-top {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 27.5vw;
+    width: 27.5vw;
+  }
+  .featured-trips-category-container {
+    margin-top: 1%;
+    padding: 1%;
+    padding-top: 2%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+  }
+  .featured-card-body {
+    width: 27.5vw;
+  }
+}
+// Average desktop
+@media screen and (min-width: 1200px) {
+  .featured-card-text h5 {
+    font-size: 1.2rem;
+  }
+  .featured-body-title {
+    font-size: 1.5rem;
   }
 }

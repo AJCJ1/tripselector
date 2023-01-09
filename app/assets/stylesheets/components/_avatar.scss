@@ -1,7 +1,36 @@
 .avatar {
   border-radius: 50%;
 }
-
+// phones
+.avatar-menu {
+  height: 100px;
+  width: 100px;
+  margin-right: 5vw;
+}
+// tablets
+@media screen and (min-width: 500px) {
+  .avatar-menu {
+    height: 120px;
+    width: 120px;
+    margin-right: 4vw;
+  }
+}
+// normal desktop
+@media screen and (min-width: 1200px) {
+  .avatar-menu {
+    height: 150px;
+    width: 150px;
+    margin-right: 1vw;
+  }
+}
+// bigger monitors
+@media screen and (min-width: 1600px) {
+  .avatar-menu {
+    height: 160px;
+    width: 160px;
+    margin-right: 1vw;
+  }
+}
 .avatar-large {
   width: 56px;
   border-radius: 50%;

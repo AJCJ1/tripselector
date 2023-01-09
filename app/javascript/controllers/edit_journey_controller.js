@@ -5,7 +5,6 @@ export default class extends Controller {
   static targets = ["infos", "form", "card", "title", "show"]
 
   connect() {
-    console.log("hello once again")
   }
 
   displayForm(event) {
@@ -18,7 +17,6 @@ export default class extends Controller {
   update(event) {
     event.preventDefault()
     const element = event.target
-    console.log(element)
     const index = element.dataset.index
     const url = this.formTargets[index].action
     fetch(url, {
@@ -29,7 +27,6 @@ export default class extends Controller {
       .then(response => response.text())
       .then((data) => {
         this.showTarget.innerHTML = data
-        console.log(data)
       })
   }
 
