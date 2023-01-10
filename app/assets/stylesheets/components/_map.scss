@@ -33,7 +33,15 @@
 }
 // tablets
 @media screen and (min-width: 500px) {
-
+  .show-map {
+    height: 65vh;
+    width: 90vw;
+    position: sticky;
+    box-shadow: $shadow;
+    margin: 0 auto;
+    margin-top: 3vh;
+    border-radius: $border-radius-sm;
+  }
 }
 // laptops
 @media screen and (min-width: 992px) {

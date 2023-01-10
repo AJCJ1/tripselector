@@ -15,7 +15,7 @@
     <div class="activities-cont">
     <h5>Things to do</h5>
       <% city_journey.city.activities.each do |activity| %>
-        <strong> <%= activity.name %> </strong><%="#{activity.description}"%>
+        <strong> <%= activity.name %> </strong> <div class="act-desc"><%="#{activity.description}"%> </div>
       <% end %>
     </div>
   </div>

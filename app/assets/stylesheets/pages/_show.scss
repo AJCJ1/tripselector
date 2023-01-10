@@ -17,6 +17,7 @@
   h5 {
     text-shadow: none;
     color: $darker-white;
+    mix-blend-mode: color-dodge;
     font-size: 0.8rem;
   }
 }
@@ -33,4 +34,28 @@
 }
 .where-to {
   margin: $def-margin;
+}
+
+
+// tablets
+@media screen and (min-width: 500px) {
+  .show-from-to {
+    h4 {
+      font-size: 2rem;
+    }
+    h5 {
+      font-size: 1.5rem;
+    }
+  }
+}
+// laptops
+@media screen and (min-width: 992px) {
+}
+// normal desktop
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) and (min-height:525px) {
+}
+// bigger monitors
+@media screen and (min-width: 1600px) {
 }

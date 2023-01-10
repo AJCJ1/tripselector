@@ -39,7 +39,18 @@
 
 // tablets
 @media screen and (min-width: 500px) {
-
+  .boring-button {
+    height: 12vw;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    color: $white;
+    transition: all 0.5s;
+    position: relative;
+    border-radius: $border-radius-sm;
+    margin: 0 auto;
+    margin-top: 3vh;
+  }
 }
 // laptops
 @media screen and (min-width: 992px) {

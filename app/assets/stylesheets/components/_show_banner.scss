@@ -32,6 +32,21 @@
     text-shadow: $text-shadow;
   }
 }
+// tablets
+@media screen and (min-width: 500px) {
+  .show-banner {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+
+
+
+
+
+
 
 
 // average desktop onward
