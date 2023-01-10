@@ -3,6 +3,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background:
+    size(cover),
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    );
   color: $white;
   vertical-align: middle;
   a {
@@ -12,17 +18,24 @@
   h1 {
     text-align: center;
     margin: auto;
+    text-shadow: $text-shadow;
   }
 }
 // average desktop onward
 @media screen and (min-width: 1200px) {
   .show-banner {
     height:70vh;
+    h1 {
+      font-size: 3rem;
+    }
   }
 }
 // bigger monitors
 @media screen and (min-width: 1600px) {
   .show-banner {
     height:60vh;
+    h1 {
+      font-size: 3.5rem;
+    }
   }
 }
