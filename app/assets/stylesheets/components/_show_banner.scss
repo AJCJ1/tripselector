@@ -1,0 +1,42 @@
+.show-banner {
+  height:50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: $white;
+  vertical-align: middle;
+  a {
+    text-decoration: none;
+    color:white;
+  }
+}
+// tablets
+@media screen and (min-width: 500px) {
+
+}
+// laptops
+@media screen and (min-width: 992px) {
+
+}
+// normal desktop
+@media screen and (min-width: 1200px) {
+
+}
+@media screen and (min-width: 1200px) and (min-height:525px) {
+
+}
+// bigger monitors
+@media screen and (min-width: 1600px) {
+  .show-banner {
+    height:700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    vertical-align: middle;
+    a {
+      text-decoration: none;
+      color:white;
+    }
+  }
+}
