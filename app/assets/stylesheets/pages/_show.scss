@@ -15,7 +15,8 @@
   color: $white;
   text-shadow: $text-shadow;
   h5 {
-    color: $mint;
+    text-shadow: none;
+    color: $darker-white;
     font-size: 0.8rem;
   }
 }
@@ -28,4 +29,8 @@
     margin: 0 auto;
     width: 90vw;
   }
+  color: $black;
+}
+.where-to {
+  margin: $def-margin;
 }

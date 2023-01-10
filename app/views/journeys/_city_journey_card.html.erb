@@ -1,21 +1,23 @@
-<div class="city-journey-card mt-4 mb-5" data-edit-journey-target="card">
-  <%= image_tag("#{city_journey.city.name}.jpg", :class => "city-card-picture") %>
-  <div class="pb-3 city-journey-info <%= 'd-none' if city_journey.errors.any? %>" data-edit-journey-target="infos">
-      <div>
-        <div class="d-flex flex-column justify-content-center align-items-left">
-          <div class="w-85">
-            <h4 class="m-4"> <strong> <%= city_journey.city.name %> </strong> <%= "from #{city_journey.start_date.strftime("%a %d %B")} to #{city_journey.end_date.strftime("%a %d %B")}" %> </h4>
-              <% city_journey.city.activities.each do |activity| %>
-                <div class="activities m-4">
-                  <strong> <%= activity.name %> :</strong> <%= " #{activity.description}" %>
-                </div>
-              <% end %>
-          </div>
-        </div>
-      </div>
-    <button id="edit-card-button" class="btn standard-button show-card-button" aria-label="Edit stop" data-action="click->edit-journey#displayForm" data-index="<%= index %>" >
-      <p class="m-0" data-index="<%= index %>">Change This City</p>
-    </button>
+<div class="city-journey-card" data-edit-journey-target="card">
+  <%= image_tag("#{city_journey.city.name}.jpg", class: "city-card-picture") %>
+  <div class="city-journey-info <%= 'd-none' if city_journey.errors.any? %>" data-edit-journey-target="infos">
+    <div class="city-journey-title-dates">
+    <div class="city-journey-title">
+      <h4><%= city_journey.city.name %></h4>
+      <button class="edit-btn" aria-label="Edit stop" data-action="click->edit-journey#displayForm" data-index="<%= index %>">
+        <%# <h4 data-index="<%= index %>
+          <i data-index="<%= index %>" class="fa fa-pencil-square" aria-hidden="true"></i>
+        <%# </h4> %>
+      </button>
+    </div>
+      <p><%= "#{city_journey.start_date.strftime("%a %d %B")} to #{city_journey.end_date.strftime("%a %d %B")}" %> </p>
+    </div>
+    <div class="activities-cont">
+    <h5>Things to do</h5>
+      <% city_journey.city.activities.each do |activity| %>
+        <strong> <%= activity.name %> </strong><%="#{activity.description}"%>
+      <% end %>
+    </div>
   </div>
   <%= simple_form_for city_journey,
     html: {
@@ -28,13 +30,15 @@
       }
     } do |f|
   %>
-    <div class="m-3">
-      <div class="edit-form">
+    <div class="cj-form-container">
+      <div id="edit-cj-date">
         <%= f.input :start_date, as: :string, input_html: { data: { flatpickr_target: "startDate" } } %>
         <%= f.input :end_date, as: :string, input_html: { data: { flatpickr_target: "endDate" } } %>
       </div>
-      <%= f.association :city, collection: City.order("name") %>
-      <%= f.submit "Update journey", class: "btn standard-button mt-2", id:"show-card-button" %>
+      <div id="city-drpdwn">
+        <%= f.association :city, collection: City.order("name") %>
+      </div>
+      <%= f.submit "Update journey", class: "btn update-cj-button" %>
     </div>
   <% end %>
 </div>

@@ -1,0 +1,40 @@
+.cj-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin-top: 2vh;
+}
+
+.update-cj-button {
+  background-color: $gogreen;
+  color: $black;
+  border-radius: $border-radius-sm;
+}
+.update-cj-button:hover {
+  background-color: $hgogreen;
+  color: $white;
+}
+#edit-cj-date {
+  display: flex;
+  width: 100%;
+  gap: 1%;
+  div {
+    width: 49%;
+    input {
+      border-color: $black;
+      background-image: none;
+      background-size: 0;
+      padding-right: 1rem;
+    }
+  }
+}
+#city-drpdwn {
+  width: 100%;
+  select {
+    border-color: $black;
+    background-image: url("chevrons-down.svg");
+    background-size: auto;
+    padding-right: 1rem;
+  }
+}

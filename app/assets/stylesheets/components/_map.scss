@@ -2,6 +2,7 @@
   z-index: 1;
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 0;
 }
 .mapboxgl-popup-content {
   text-align: center;
@@ -20,7 +21,8 @@
   width: 90vw;
   position: sticky;
   box-shadow: $shadow;
-  margin: 3vh auto;
+  margin: 0 auto;
+  margin-top: 3vh;
   border-radius: $border-radius-sm;
 }
 .mapboxgl-ctrl-top-right {
