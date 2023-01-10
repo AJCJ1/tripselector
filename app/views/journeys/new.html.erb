@@ -16,7 +16,7 @@
     <%= f.input :name, label: "Name Your Journey" %>
     <%= f.input :country, label: "Where to?", collection: [ "Australia (not available yet)", "Brazil (not available yet)", "France", "New Zealand (not available yet)"], disabled: ["Australia (not available yet)", "Brazil (not available yet)", "New Zealand (not available yet)"] %>
     <%= f.input :start_date, as: :string, input_html: { data: { flatpickr_target: "startDate" } } %>
-    <%= f.input :end_date, as: :string, input_html: { data: { flatpickr_target: "endDate" } } %>
+    <%= f.input :end_date, as: :string, input_html: { data: { flatpickr_target: "endDate" }, id: 'end_date' } %>
     <%= f.input :tag,
             as: :radio_buttons,
             collection_wrapper_tag: 'div',
