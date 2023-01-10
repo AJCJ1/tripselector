@@ -30,6 +30,7 @@
     text-align: center;
     margin: 0;
     text-shadow: $text-shadow;
+    font-size: 2.5rem;
   }
 }
 // tablets
@@ -40,19 +41,10 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
 // average desktop onward
 @media screen and (min-width: 1200px) {
   .show-banner {
-    height:70vh;
+    height:90vh;
     h1 {
       font-size: 3rem;
     }

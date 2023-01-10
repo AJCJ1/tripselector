@@ -5,14 +5,15 @@
   // padding: 1.8em 4em;
   border: none;
   outline: none;
-  background:
-  /* top, transparent black, faked with gradient */
-  linear-gradient(
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2)
-  ),
-  /* bottom, image */
-  url("green-gradient-banner.svg");
+  background-color: $black;
+  // background:
+  // /* top, transparent black, faked with gradient */
+  // linear-gradient(
+  //   rgba(0, 0, 0, 0.2),
+  //   rgba(0, 0, 0, 0.2)
+  // ),
+  // /* bottom, image */
+  // url("green-gradient-banner.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -28,7 +29,6 @@
   position: relative;
   border-radius: $border-radius-sm;
   margin: 0 auto;
-  margin-top: 3vh;
 }
 .boring-button:hover {
   box-shadow: $shadow-hover;
@@ -39,17 +39,23 @@
 
 // tablets
 @media screen and (min-width: 500px) {
+  .boring-desk {
+    display: block;
+    margin-top: 3vh;
+  }
+  .boring-mob {
+    display: none;
+  }
   .boring-button {
-    height: 12vw;
+    height: 9vw;
     text-align: center;
-    width: 100%;
+    width: 50%;
     cursor: pointer;
     color: $white;
     transition: all 0.5s;
     position: relative;
     border-radius: $border-radius-sm;
     margin: 0 auto;
-    margin-top: 3vh;
   }
 }
 // laptops
@@ -58,7 +64,10 @@
 }
 // normal desktop
 @media screen and (min-width: 1200px) {
-
+  .boring-button {
+    height: 6vw;
+    font-size: 1.5rem;
+  }
 }
 // bigger monitors
 @media screen and (min-width: 1600px) {

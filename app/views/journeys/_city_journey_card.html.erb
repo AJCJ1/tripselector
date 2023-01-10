@@ -1,13 +1,11 @@
 <div class="city-journey-card" data-edit-journey-target="card">
   <%= image_tag("#{city_journey.city.name}.jpg", class: "city-card-picture") %>
-  <div class="city-journey-info <%= 'd-none' if city_journey.errors.any? %>" data-edit-journey-target="infos">
+  <div class="city-journey-info <%= "d-none" if city_journey.errors.any? %>" data-edit-journey-target="infos">
     <div class="city-journey-title-dates">
     <div class="city-journey-title">
       <h4><%= city_journey.city.name %></h4>
       <button class="edit-btn" aria-label="Edit stop" data-action="click->edit-journey#displayForm" data-index="<%= index %>">
-        <%# <h4 data-index="<%= index %>
-          <i data-index="<%= index %>" class="fa fa-pencil-square" aria-hidden="true"></i>
-        <%# </h4> %>
+        <i data-index="<%= index %>" class="fa fa-pencil-square" aria-hidden="true"></i>
       </button>
     </div>
       <p><%= "#{city_journey.start_date.strftime("%a %d %B")} to #{city_journey.end_date.strftime("%a %d %B")}" %> </p>

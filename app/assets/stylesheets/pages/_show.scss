@@ -1,6 +1,6 @@
-.card-map-aligner {
-  margin-top: 25px;
-}
+// .card-map-aligner {
+//   margin-top: 25px;
+// }
 #edit-card-button {
   background-color: transparent;
   border: 1px solid $button;
@@ -47,9 +47,27 @@
       font-size: 1.5rem;
     }
   }
+  .show-card-container{
+    form {
+      width: 95vw;
+    }
+  }
 }
 // laptops
 @media screen and (min-width: 992px) {
+  .show-card-container {
+    flex-direction: row-reverse;
+    form {
+      width: 100%;
+      height: 27vw;
+    }
+  }
+  .show-card-container > form {
+    display: none;
+  }
+  .where-to {
+    display: none;
+  }
 }
 // normal desktop
 @media screen and (min-width: 1200px) {
