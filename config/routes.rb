@@ -15,7 +15,6 @@ Rails.application.routes.draw do
 
   resources :journeys
   resources :cities, only:[:index, :show]
-  resources :bookmarks, only:[:new, :create]
 
   get "/journeys/generate/new", to: "journeys#generate_new"
   post "/journeys/create/new", to: "journeys#create_new"

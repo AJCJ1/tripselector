@@ -5,5 +5,4 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :journeys
   has_one_attached :photo
-  has_many :bookmarks
 end
