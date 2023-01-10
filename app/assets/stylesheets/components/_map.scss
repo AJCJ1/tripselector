@@ -15,3 +15,52 @@
   border-radius: 50%;
   cursor: pointer;
 }
+.show-map {
+  height: 50vh;
+  width: 90vw;
+  position: sticky;
+  box-shadow: $shadow;
+  margin: 3vh auto;
+  border-radius: $border-radius-sm;
+}
+.mapboxgl-ctrl-top-right {
+  display: none;
+}
+.mapboxgl-ctrl-bottom-left {
+  display: none;
+}
+// tablets
+@media screen and (min-width: 500px) {
+
+}
+// laptops
+@media screen and (min-width: 992px) {
+
+}
+// normal desktop
+@media screen and (min-width: 1200px) {
+
+}
+@media screen and (min-width: 1200px) and (min-height:525px) {
+
+}
+  // bigger monitors
+  @media screen and (min-width: 1600px) {
+    .mapboxgl-popup {
+      z-index: 1;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .mapboxgl-popup-content {
+      text-align: center;
+      font-family: $body-font;
+    }
+    .marker {
+      background-image: url('droplet.svg');
+      background-size: cover;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }

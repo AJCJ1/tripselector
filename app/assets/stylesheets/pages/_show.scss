@@ -9,3 +9,23 @@
   color:$button;
   margin-left: 20px;
 }
+
+.show-from-to {
+  width: 100%;
+  color: $white;
+  text-shadow: $text-shadow;
+  h5 {
+    color: $mint;
+    font-size: 0.8rem;
+  }
+}
+.show-card-container{
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  form {
+    margin: 0 auto;
+    width: 90vw;
+  }
+}

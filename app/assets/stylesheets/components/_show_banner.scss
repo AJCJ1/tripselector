@@ -1,8 +1,14 @@
 .show-banner {
-  height:50vh;
+  height:90vh;
+  width: 100vw;
+  display: flex;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 3vh;
   background:
     size(cover),
     linear-gradient(
@@ -11,16 +17,23 @@
     );
   color: $white;
   vertical-align: middle;
-  a {
+  button {
     text-decoration: none;
     color:white;
+    margin: 0 auto;
+  }
+  form {
+    width: 60%;
+    margin: 0 auto;
   }
   h1 {
     text-align: center;
-    margin: auto;
+    margin: 0;
     text-shadow: $text-shadow;
   }
 }
+
+
 // average desktop onward
 @media screen and (min-width: 1200px) {
   .show-banner {

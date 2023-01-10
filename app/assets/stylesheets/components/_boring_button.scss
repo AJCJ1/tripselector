@@ -1,0 +1,76 @@
+.boring-desk {
+  display: none;
+}
+.boring-button {
+  // padding: 1.8em 4em;
+  border: none;
+  outline: none;
+  background:
+  /* top, transparent black, faked with gradient */
+  linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+  ),
+  /* bottom, image */
+  url("green-gradient-banner.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 0;
+  font-family: $body-font;
+	height: 25vw;
+	text-align: center;
+	width: 100%;
+	cursor: pointer;
+	color: $white;
+	transition: all 0.5s;
+  position: relative;
+  border-radius: $border-radius-sm;
+  margin: 0 auto;
+  margin-top: 3vh;
+}
+.boring-button:hover {
+  box-shadow: $shadow-hover;
+}
+
+
+
+
+// tablets
+@media screen and (min-width: 500px) {
+
+}
+// laptops
+@media screen and (min-width: 992px) {
+
+}
+// normal desktop
+@media screen and (min-width: 1200px) {
+
+}
+// bigger monitors
+@media screen and (min-width: 1600px) {
+  .boring-desk {
+    display: block;
+  }
+  .boring-button {
+    padding: 1.8em 4em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 0;
+    font-family: $body-font;
+    line-height: 50px;
+    height: fit-content;
+    text-align: center;
+    width: fit-content;
+    cursor: pointer;
+    color: $white;
+    transition: all 0.5s;
+    position: absolute;
+    top: 60%;
+    right: 39.5%;
+    border-radius: 10px;
+  }
+}
