@@ -12,12 +12,12 @@ export default class extends Controller {
 
     if (this.activityTargets[index].style.display == "" || this.activityTargets[index].style.display == "none") {
       this.activityTargets[index].style.display = "inline"
-      this.symbolTargets[index].classList.add("fa-caret-down")
-      this.symbolTargets[index].classList.remove("fa-caret-up")
-    } else if (this.activityTargets[index].style.display == "inline") {
-      this.activityTargets[index].style.display = "none"
       this.symbolTargets[index].classList.add("fa-caret-up")
       this.symbolTargets[index].classList.remove("fa-caret-down")
+    } else if (this.activityTargets[index].style.display == "inline") {
+      this.activityTargets[index].style.display = "none"
+      this.symbolTargets[index].classList.add("fa-caret-down")
+      this.symbolTargets[index].classList.remove("fa-caret-up")
     }
   }
 }
