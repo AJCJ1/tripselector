@@ -1,5 +1,4 @@
 import { Application } from "@hotwired/stimulus"
-import ReadMore from "stimulus-read-more"
 import ScrollTo from 'stimulus-scroll-to'
 
 const application = Application.start()

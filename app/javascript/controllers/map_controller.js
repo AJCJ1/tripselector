@@ -25,7 +25,6 @@ export default class extends Controller {
     this.map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 })
   }
   connect() {
-    // console.log(this.markersValue)
     mapboxgl.accessToken = this.apiKeyValue
 
     this.map = new mapboxgl.Map({
@@ -37,7 +36,7 @@ export default class extends Controller {
     this.map.addControl(new mapboxgl.FullscreenControl(), 'top-left');
     this.map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken,
       mapboxgl: mapboxgl }))
+    this.map.scrollZoom.disable();
+    this.map.dragPan.disable();
   }
-
-
 }

@@ -1,0 +1,192 @@
+.city-journey-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  gap: 3vh;
+  margin-bottom: 3vh;
+}
+.city-journey-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.activities-cont {
+  display:flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  color: $gray;
+  h5 {
+    font-size: 1rem;
+    border-bottom: 1px solid $lighter-black;
+    padding-bottom: 1vh;
+    color: $black;
+  }
+  strong {
+    font-size: 1rem;
+    color: $black;
+  }
+}
+.city-journey-card-show {
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px darkgrey;
+  border-color: black;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  height: 230px;
+}
+.city-card-picture {
+  border-radius: $border-radius-sm;
+  height: 90vw;
+  width: 90vw;
+  object-fit: cover;
+  object-position: center;
+}
+.city-journey-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vh;
+  i {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+.city-journey-info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+}
+.act-name-arrow:hover {
+  cursor:pointer;
+}
+.show-act-desc-sym {
+  display: none;
+}
+// tablets
+@media screen and (min-width: 500px) {
+  .city-journey-container {
+    width: 95vw;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vh;
+    margin-bottom: 3vh;
+    flex-wrap: wrap;
+  }
+  .city-journey-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+  }
+  .activities-cont {
+    display:flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    color: $gray;
+    h5 {
+      font-size: 1rem;
+      border-bottom: 1px solid $lighter-black;
+      padding-bottom: 1vh;
+      color: $black;
+    }
+    strong {
+      font-size: 1rem;
+      color: $black;
+    }
+  }
+  .city-journey-card-show {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px darkgrey;
+    border-color: black;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    height: 230px;
+  }
+  .city-card-picture {
+    height: 45vw;
+    width: 45vw;
+  }
+  .city-journey-title {
+    margin-top: 0;
+    i {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+  }
+  .city-journey-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: fit-content;
+    align-self: baseline;
+  }
+}
+// smaller laptops
+@media screen and (min-width: 992px) {
+  .show-act-desc-sym {
+    display: inline;
+  }
+}
+// normal desktop inc macbook pro etc
+@media screen and (min-width: 1200px) {
+  .city-journey-card {
+    width: 100%;
+  }
+  .city-journey-container {
+    width: 60vw;
+    margin: 3vw 0;
+    margin-left: 3vw;
+  }
+  .city-card-picture {
+    height: 25vw;
+    width: 25vw;
+  }
+  .activities-cont {
+    width: 100%;
+  }
+  .act-desc {
+    display: none;
+  }
+  .show-act-desc-sym {
+    display: inline;
+  }
+}
+// bigger monitors
+@media screen and (min-width: 1600px) {
+  .show-act-desc-sym {
+    display: none;
+  }
+  .act-desc {
+    display: block;
+  }
+  .city-journey-title {
+    margin-top: 0;
+    h4 {
+      font-size: 2.5rem;
+    }
+    i {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+  }
+  .activities-cont {
+    h5 {
+      font-size: 1.5rem;
+    }
+    strong {
+      font-size: 1.5rem;
+    }
+    div {
+      font-size: 1.1rem;
+    }
+  }
+}

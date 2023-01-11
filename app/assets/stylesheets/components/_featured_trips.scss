@@ -29,8 +29,7 @@
   }
 }
 .featured-card {
-  border-radius: 10px;
-  // box-shadow: $box-shadow;
+  border-radius: $border-radius-sm;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,6 +80,9 @@
 @media screen and (min-width: 500px) {
   .mountains {
     display: inherit;
+  }
+  .featured-trips-container {
+    padding-top: 2%;
   }
   .featured-trips-container {
     margin-left: 4%;

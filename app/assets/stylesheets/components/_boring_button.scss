@@ -1,0 +1,66 @@
+.boring-desk {
+  display: none;
+}
+.boring-button {
+  border: none;
+  outline: none;
+  background-color: $black;
+  cursor: pointer;
+  z-index: 0;
+  font-family: $body-font;
+	height: 25vw;
+	text-align: center;
+	width: 100%;
+	cursor: pointer;
+	color: $white;
+	transition: all 0.3s;
+  position: relative;
+  border-radius: $border-radius-sm;
+  margin: 0 auto;
+  margin-bottom: 3vh;
+}
+.boring-button:hover {
+  box-shadow: $shadow-hover;
+}
+// tablets
+@media screen and (min-width: 500px) {
+  .boring-desk {
+    display: block;
+    margin-top: 3vh;
+  }
+  .boring-mob {
+    display: none;
+  }
+  .boring-button {
+    height: 9vw;
+    text-align: center;
+    width: 50%;
+    cursor: pointer;
+    color: $white;
+    transition: all 0.5s;
+    position: relative;
+    border-radius: $border-radius-sm;
+    margin: 0 auto;
+  }
+}
+// laptops
+@media screen and (min-width: 992px) {
+  .boring-button {
+    font-size: 1.5rem;
+  }
+}
+// normal laptops inc macbook pro
+@media screen and (min-width: 1200px) {
+  .boring-button {
+    height: 6vw;
+    font-size: 1.5rem;
+    width: 40%;
+  }
+}
+// bigger monitors
+@media screen and (min-width: 1600px) {
+  .boring-desk {
+    display: block;
+    width: 30%;
+  }
+}

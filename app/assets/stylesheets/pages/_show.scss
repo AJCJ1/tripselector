@@ -1,6 +1,3 @@
-.card-map-aligner {
-  margin-top: 25px;
-}
 #edit-card-button {
   background-color: transparent;
   border: 1px solid $button;
@@ -8,4 +5,61 @@
   width: fit-content;
   color:$button;
   margin-left: 20px;
+}
+.show-from-to {
+  width: 100%;
+  color: $white;
+  text-shadow: $text-shadow;
+  h5 {
+    text-shadow: none;
+    color: $darker-white;
+    mix-blend-mode: color-dodge;
+    font-size: 0.8rem;
+  }
+}
+.show-card-container{
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  form {
+    margin: 0 auto;
+    width: 90vw;
+  }
+  color: $black;
+}
+.where-to {
+  margin: $def-margin;
+}
+// tablets
+@media screen and (min-width: 500px) {
+  .show-from-to {
+    h4 {
+      font-size: 2rem;
+    }
+    h5 {
+      font-size: 1.5rem;
+    }
+  }
+  .show-card-container{
+    form {
+      width: 95vw;
+    }
+  }
+}
+// normal laptops inc macbook pro
+@media screen and (min-width: 1200px) {
+  .show-card-container {
+    flex-direction: row-reverse;
+    form {
+      width: 100%;
+      height: 27vw;
+    }
+  }
+  .show-card-container > form {
+    display: none;
+  }
+  .where-to {
+    display: none;
+  }
 }

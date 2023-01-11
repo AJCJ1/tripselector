@@ -1,37 +1,28 @@
- <div class="city-banner d-flex justify-content-center align-items-center" style="background-image: url('<%= image_path "#{city_journeys.first.city.name}.jpg"%>')">
-    <h1> <%= journey.name %> </h1>
+ <div class="show-banner" style="background-image: url('<%= image_path "#{city_journeys.first.city.name}.jpg"%>')">
+    <h1> <%= journey.name.capitalize %> </h1>
+    <div class="show-from-to text-center" data-edit-journey-target="title">
+        <h4><%="#{city_journeys.first.city.name}"%> to <%="#{city_journeys.last.city.name}." %></h4>
+        <h5>Starts <%="#{city_journeys.first.start_date.strftime("%a %d %B")}"%></h5>
+        <h5>Ends <%="#{city_journeys.last.end_date.strftime("%a %d %B")}"%></h5>
+      </div>
     <% if current_user.nil? || current_user.journeys.last.nil? || current_user.journeys.last.id != journey.id %>
-          <%= nil %>
-        <% else %>
-    <%= button_to raw('<a>Boring! Give me another Journey!</a>'), journeys_create_new_path, method: :post , class:"bn5 mt-4 btn"%>
+      <%= nil %>
+    <% else %>
+      <%= button_to "Spin again!", journeys_create_new_path, method: :post , class:"boring-button boring-desk"%>
     <% end %>
   </div>
-
-  <div class="page-container">
-    <div class= "">
-      <h4 class="mt-5" data-edit-journey-target="title">
-        <%= "This journey starts on "%><u><%="#{city_journeys.first.start_date.strftime("%a %d %B")}"%></u> in <u><%="#{city_journeys.first.city.name}"%></u><%=" and ends on "%> <u><%="#{city_journeys.last.end_date.strftime("%a %d %B")}"%></u> <%="in"%> <u><%="#{city_journeys.last.city.name}." %></u>
-      </h4>
-      <div>
-        <% city_journeys.each_with_index do |city_journey, index| %>
-          <%= render "journeys/city_journey_card", city_journey: city_journey, index: index %>
-        <% end %>
-      </div>
-
-      <h4 class="ml-2 p-3"> Enjoy your trip! </h4>
+  <div class="show-card-container">
+  <h4 class="where-to text-center">Your Journey at a Glance</h4>
+    <% if current_user.nil? || current_user.journeys.last.nil? || current_user.journeys.last.id != journey.id %>
+        <%= nil %>
+      <% else %>
+        <%= button_to "Spin again!", journeys_create_new_path, method: :post , class:"boring-button boring-mob"%>
+    <% end %>
+    <%= render "journeys/mapbox", markers: markers %>
+    <h4 class="where-to text-center">The Itinerary</h4>
+    <div class="city-journey-container">
+      <% city_journeys.each_with_index do |city_journey, index| %>
+        <%= render "journeys/city_journey_card", city_journey: city_journey, index: index %>
+      <% end %>
     </div>
-    <div style="width: 50%" class="mt-0 m-5">
-      <div>
-        <% if current_user.nil? || current_user.journeys.last.nil? || current_user.journeys.last.id != journey.id %>
-          <%= nil %>
-        <% else %>
-          <div class="refresh-container d-flex justify-content-center align-items-center">
-              <%# <%= button_to raw('<a>Boring! Give me another Journey!</a>'), journeys_create_new_path, method: :post , class:"bn5 mt-4 btn"%>
-            <%# <div class="box-ref mt-4">
-              <%= button_to raw('<h1>Try Again</h1>'), journeys_create_new_path, method: :post , class:"btn btn-ref"%>
-            <%# </div> %>
-          </div>
-        <% end %>
-      </div>
-      <%= render "journeys/mapbox", markers: markers %>
-    </div>
+  </div>
