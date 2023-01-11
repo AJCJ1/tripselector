@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import ActivityController from "./activity_controller"
+application.register("activity", ActivityController)
+
 import AddressAutocompleteController from "./address_autocomplete_controller"
 application.register("address-autocomplete", AddressAutocompleteController)
 

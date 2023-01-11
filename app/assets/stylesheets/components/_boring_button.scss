@@ -2,7 +2,6 @@
   display: none;
 }
 .boring-button {
-  // padding: 1.8em 4em;
   border: none;
   outline: none;
   background-color: $black;
@@ -33,10 +32,6 @@
 .boring-button:hover {
   box-shadow: $shadow-hover;
 }
-
-
-
-
 // tablets
 @media screen and (min-width: 500px) {
   .boring-desk {
@@ -60,37 +55,22 @@
 }
 // laptops
 @media screen and (min-width: 992px) {
-
+  .boring-button {
+    font-size: 1.5rem;
+  }
 }
-// normal desktop
+// normal laptops inc macbook pro
 @media screen and (min-width: 1200px) {
   .boring-button {
     height: 6vw;
     font-size: 1.5rem;
+    width: 40%;
   }
 }
 // bigger monitors
 @media screen and (min-width: 1600px) {
   .boring-desk {
     display: block;
-  }
-  .boring-button {
-    padding: 1.8em 4em;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    z-index: 0;
-    font-family: $body-font;
-    line-height: 50px;
-    height: fit-content;
-    text-align: center;
-    width: fit-content;
-    cursor: pointer;
-    color: $white;
-    transition: all 0.5s;
-    position: absolute;
-    top: 60%;
-    right: 39.5%;
-    border-radius: 10px;
+    width: 30%;
   }
 }

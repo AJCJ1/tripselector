@@ -1,4 +1,4 @@
-<div class="city-journey-card" data-edit-journey-target="card">
+<div class="city-journey-card" data-edit-journey-target="card" data-controller="activity">
   <%= image_tag("#{city_journey.city.name}.jpg", class: "city-card-picture") %>
   <div class="city-journey-info <%= "d-none" if city_journey.errors.any? %>" data-edit-journey-target="infos">
     <div class="city-journey-title-dates">
@@ -12,8 +12,14 @@
     </div>
     <div class="activities-cont">
     <h5>Things to do</h5>
-      <% city_journey.city.activities.each do |activity| %>
-        <strong> <%= activity.name %> </strong> <div class="act-desc"><%="#{activity.description}"%> </div>
+      <% city_journey.city.activities.each_with_index do |activity, i| %>
+        <strong class="act-name-arrow" data-index="<%=i%>" data-action="click->activity#showDescription">
+          <%= activity.name %>
+          <i class="fa fa-caret-down show-act-desc-sym" data-activity-target="symbol" data-index="<%=i%>" aria-hidden="true"></i>
+        </strong>
+        <div class="act-desc" data-activity-target="activity">
+          <%="#{activity.description}"%>
+        </div>
       <% end %>
     </div>
   </div>

@@ -38,37 +38,55 @@
 }
 // laptops
 @media screen and (min-width: 992px) {
+
+}
+// normal laptops inc macbook pro
+@media screen and (min-width: 1200px) {
   .show-map {
     height: 85vh;
-    width: 47.5vw;
+    width: 35vw;
   }
   #mapbox-map {
     position: sticky;
     top:12.5vh;
     margin: 3vw;
   }
-}
-// normal desktop
-@media screen and (min-width: 1200px) {
-
-}
-  // bigger monitors
-  @media screen and (min-width: 1600px) {
-    .mapboxgl-popup {
-      z-index: 1;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    .mapboxgl-popup-content {
-      text-align: center;
-      font-family: $body-font;
-    }
-    .marker {
-      background-image: url('droplet.svg');
-      background-size: cover;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      cursor: pointer;
-    }
+  .mapboxgl-popup {
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
   }
+}
+// normal laptops inc macbook pro
+@media screen and (min-width: 1400px) {
+  .show-map {
+    height: 85vh;
+    width: 40vw;
+  }
+  #mapbox-map {
+    position: sticky;
+    top:12.5vh;
+    margin: 3vw;
+  }
+  .mapboxgl-popup {
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+// bigger monitors
+@media screen and (min-width: 1600px) {
+
+  // .mapboxgl-popup-content {
+  //   text-align: center;
+  //   font-family: $body-font;
+  // }
+  // .marker {
+  //   background-image: url('droplet.svg');
+  //   background-size: cover;
+  //   width: 25px;
+  //   height: 25px;
+  //   border-radius: 50%;
+  //   cursor: pointer;
+  // }
+}
