@@ -16,7 +16,6 @@
   position: sticky;
   box-shadow: $shadow;
   margin: 0 auto;
-  margin-top: 3vh;
   border-radius: $border-radius-sm;
 }
 .mapboxgl-ctrl-top-right {
@@ -35,10 +34,6 @@
     margin: 0 auto;
     border-radius: $border-radius-sm;
   }
-}
-// laptops
-@media screen and (min-width: 992px) {
-
 }
 // normal laptops inc macbook pro
 @media screen and (min-width: 1200px) {
@@ -73,8 +68,4 @@
     border-radius: 10px;
     overflow: hidden;
   }
-}
-// bigger monitors
-@media screen and (min-width: 1600px) {
-
 }

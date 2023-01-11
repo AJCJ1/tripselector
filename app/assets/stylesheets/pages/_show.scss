@@ -47,10 +47,6 @@
     }
   }
 }
-// smaller laptops
-@media screen and (min-width: 992px) {
-
-}
 // normal laptops inc macbook pro
 @media screen and (min-width: 1200px) {
   .show-card-container {
@@ -66,7 +62,4 @@
   .where-to {
     display: none;
   }
-}
-// bigger monitors
-@media screen and (min-width: 1600px) {
 }
