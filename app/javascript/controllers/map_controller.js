@@ -40,6 +40,4 @@ export default class extends Controller {
     this.map.scrollZoom.disable();
     this.map.dragPan.disable();
   }
-
-
 }
