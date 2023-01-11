@@ -1,0 +1,94 @@
+.form-container{
+  margin: 0 auto;
+  margin-top: 15vh;
+  width: 90vw;
+  display:flex;
+  background-color: $white;
+  border-radius: $border-radius-sm;
+  color:$black;
+}
+.form-img {
+  display: none;
+}
+.form-inputs {
+  margin: 2.5%;
+}
+.adv-heading {
+  margin-top:25%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: $white;
+  align-self: center;
+}
+.edit-form {
+  display: inline-flex;
+}
+.edit-form > div {
+  margin: 5px;
+}
+.category-selector {
+  margin-bottom: 5px;
+}
+.svg-new-left {
+  display: none;
+}
+.svg-new-right {
+  display: none;
+}
+.form-select {
+  border: 1px solid $black !important;
+  border-radius: $border-radius-sm;
+}
+.form-control {
+  border: 1px solid $black !important;
+  border-radius: $border-radius-sm;
+}
+// tablets
+@media screen and (min-width: 500px) {
+
+}
+// laptops
+@media screen and (min-width: 992px) {
+
+}
+// normal desktop
+@media screen and (min-width: 1200px) {
+  .form-container{
+    margin: auto;
+    width: 50%;
+    display:flex;
+    margin-top: 1%;
+    background-color: white;
+    border-radius: 15px;
+    color:$gray;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  .form-img {
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("mountain.jpeg");
+    background-position: center;
+    object-fit:cover;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .svg-new-left {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+  }
+  .svg-new-right {
+    position: absolute;
+    top: 25%;
+    right: 2.5%;
+  }
+}
+
+// bigger monitors
+@media screen and (min-width: 1600px) {
+
+}
