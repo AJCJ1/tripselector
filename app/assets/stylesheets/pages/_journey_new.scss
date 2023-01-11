@@ -1,17 +1,35 @@
 .form-container{
   margin: 0 auto;
-  margin-top: 15vh;
+  margin-top: 12.5vh;
   width: 90vw;
   display:flex;
-  background-color: $white;
+  background-color: transparent;
   border-radius: $border-radius-sm;
   color:$black;
 }
 .form-img {
   display: none;
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("mountain.jpeg");
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
+  border-top-left-radius: $border-radius-sm;
+  border-bottom-left-radius: $border-radius-sm;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
 }
 .form-inputs {
-  margin: 2.5%;
+  margin: $def-margin;
 }
 .adv-heading {
   margin-top:25%;
@@ -38,44 +56,53 @@
 .form-select {
   border: 1px solid $black !important;
   border-radius: $border-radius-sm;
+  &:focus {
+    outline: none;
+    box-shadow: $shadow;
+  }
 }
 .form-control {
   border: 1px solid $black !important;
   border-radius: $border-radius-sm;
+  &:focus {
+    outline: none;
+    box-shadow: $shadow;
+  }
 }
 // tablets
 @media screen and (min-width: 500px) {
-
+  .form-container{
+    margin: auto;
+    width: 80vw;
+    display:flex;
+    margin-top: 12.5%;
+    background-color: $white;
+    border-radius: $border-radius-sm;
+  }
 }
 // laptops
 @media screen and (min-width: 992px) {
-
+  .form-container{
+    margin-top: 6.5%;
+    box-shadow: $shadow;
+    height: fit-content;
+  }
+  .form-img {
+    display: inherit;
+    width: 50%;
+  }
+  .form-inputs > form {
+    div {
+      margin-bottom: 1vh !important;
+    }
+  }
+  .form-inputs {
+    width: 45%;
+  }
 }
 // normal desktop
 @media screen and (min-width: 1200px) {
-  .form-container{
-    margin: auto;
-    width: 50%;
-    display:flex;
-    margin-top: 1%;
-    background-color: white;
-    border-radius: 15px;
-    color:$gray;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  }
-  .form-img {
-    background:
-      linear-gradient(
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),
-      url("mountain.jpeg");
-    background-position: center;
-    object-fit:cover;
-    background-size: cover;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-  }
+
   .svg-new-left {
     position: absolute;
     top: 25%;
@@ -86,9 +113,22 @@
     top: 25%;
     right: 2.5%;
   }
+  .form-label {
+    font-size: 0.75rem;
+  }
 }
 
 // bigger monitors
 @media screen and (min-width: 1600px) {
-
+  .form-label {
+    font-size: 1.5rem;
+  }
+  .col-form-label {
+    font-size: 1.5rem;
+  }
+  .form-img {
+    h1 {
+      font-size: 3.5rem !important;
+    }
+  }
 }

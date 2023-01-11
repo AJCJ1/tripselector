@@ -35,3 +35,15 @@
   background-color: $mint;
   transition: 0.2s ease;
 }
+// normal desktop
+@media screen and (min-width: 1200px) {
+  .category-selector + label {
+    font-size: 1rem;
+  }
+}
+// bigger monitors
+@media screen and (min-width: 1600px) {
+  .category-selector + label {
+    font-size: 2rem;
+  }
+}
