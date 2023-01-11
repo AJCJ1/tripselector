@@ -38,6 +38,7 @@ export default class extends Controller {
     this.map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken,
       mapboxgl: mapboxgl }))
     this.map.scrollZoom.disable();
+    this.map.dragPan.disable();
   }
 
 
