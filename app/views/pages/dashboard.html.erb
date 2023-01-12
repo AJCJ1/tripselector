@@ -25,11 +25,22 @@
       <div class="p-3 m-3 cards-container">
         <% @journeys.each do |journey| %>
           <% if journey.start_date > Date.today %>
-            <div class="card shadow p-3 bg-white rounded-lg" id="dashboard-card" style="width: 18rem">
+            <div class="card shadow bg-white rounded-lg" id="dashboard-card" style="width: 18rem">
               <%= image_tag "#{journey.city_journeys.first.city.name}.jpg", :class => "dashboard-image" %>
               <div class="card-body text-center">
                 <p><%= link_to "#{journey.name}", journey_path(journey) %></p>
-                <p><%= journey.tag %></p>
+                <p>
+                  <% case journey.tag %>
+                  <% when "Food" %>
+                  <%= "🍕 Foodie 🍕" %>
+                  <% when "Sea" %>
+                  <%= "🌊 Sea 🌊" %>
+                  <% when "Major City" %>
+                  <%= "🌉 City 🌉" %>
+                  <% when "Mountain" %>
+                  <%= "🏔 Mountain 🏔" %>
+                  <% end %>
+                </p>
                 <div id="dates">
                   <p> From <%= journey.start_date.strftime("%a %d %B") %> to <%= journey.end_date.strftime("%a %d %B") %></p>
                 </div>
