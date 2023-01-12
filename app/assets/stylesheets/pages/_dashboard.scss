@@ -19,15 +19,19 @@
   color: black;
 }
 .card-page-container {
-  width: 80%;
-  margin: auto;
+  margin-bottom: 3%;
 }
 .cards-container {
   display: flex;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
   justify-items: center;
+  justify-content: center;
   align-items: center;
+  gap: 1vh;
+  margin-top: 1%;
+  padding: 1%;
+  padding-top: 2%;
+  margin-bottom: 1%;
 }
 .dashboard-image{
   border-radius: 10px;
@@ -76,4 +80,14 @@
     align-content:center;
     height: min-content;
   }
+}
+
+// tablets
+@media screen and (min-width: 500px) {
+
+}
+
+// Average desktop
+@media screen and (min-width: 1200px) {
+
 }
