@@ -1,8 +1,10 @@
 TripSelector is an app that runs in Rails 7.
 
-It takes a user's input parameters, or allows them to get a 'surprise'. It then autogenerates a travelling route across a country of their choice, to help them decide where to go for their next holiday.
+It was created in two weeks in December 2022 by Arnold Jones (AJCJ1), Victor de Quercize (vdequercize), Konstantinos Koliolios (kostas39) and Pete Dawkins (Petejd79) as part of our final project for Le Wagon Bootcamp. It was later made responsive and bug free by Arnold and Victor. No further developments are planned for the moment.
 
-It's available <a href="https://www.trips-selector.com/">here</a>, and is still in further dev.
+It takes a user's input parameters, or allows them to get a 'surprise'. It then autogenerates a travelling route across a country of their choice (only France for now), to help them decide where to go for their next holiday.
+
+It's available <a href="https://www.trips-selector.com/">here</a>.
 
 Front-end :
 
@@ -21,9 +23,3 @@ Back-end :
 Integrations :
 
 - Mapbox API
-
-
-Noteable changes that are in development:
-
-- Removal of countries not yet seeded
-- Making website responsive to majority of device sizes

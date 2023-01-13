@@ -34,7 +34,7 @@
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Saint Malo to Nantes</h3>
         <div class="featured-card-text">
-          <h5>France for X days</h5>
+          <h5>France for <%= (@sea_1.end_date - @sea_1.start_date).to_i + 1 %> days</h5>
           <h5 class="text-decoration-none featured-body-type">🌊 Sea 🌊</h5>
         </div>
       </div>
@@ -44,7 +44,7 @@
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">La Rochelle to Ars-en-Ré</h3>
         <div class="featured-card-text">
-          <h5>France for X days</h5>
+          <h5>France for <%= (@sea_2.end_date - @sea_2.start_date).to_i + 1 %> days</h5>
           <h5 class="text-decoration-none featured-body-type">🌊 Sea 🌊</h5>
         </div>
       </div>
@@ -54,7 +54,7 @@
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Biarritz</h3>
         <div class="featured-card-text">
-          <h5>France for X days</h5>
+          <h5>France for <%= (@sea_3.end_date - @sea_3.start_date).to_i + 1 %> days</h5>
           <h5 class="text-decoration-none featured-body-type">🌊 Sea 🌊</h5>
         </div>
       </div>
@@ -67,7 +67,7 @@
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Aubenas to Lyon</h3>
         <div class="featured-card-text">
-          <h5>France for X days</h5>
+          <h5>France for <%= (@mountain_1.end_date - @mountain_1.start_date).to_i + 1 %> days</h5>
           <h5 class="text-decoration-none featured-body-type">🏔 Mountain 🏔</h5>
         </div>
       </div>
@@ -77,7 +77,7 @@
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Annecy to Chambéry</h3>
         <div class="featured-card-text">
-          <h5>France for X days</h5>
+          <h5>France for <%= (@mountain_2.end_date - @mountain_2.start_date).to_i + 1 %> days</h5>
           <h5 class="text-decoration-none featured-body-type">🏔 Mountain 🏔</h5>
         </div>
       </div>
@@ -87,7 +87,7 @@
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Grenoble</h3>
         <div class="featured-card-text">
-          <h5>France for X days</h5>
+          <h5>France for <%= (@mountain_3.end_date - @mountain_3.start_date).to_i + 1 %> days</h5>
           <h5 class="text-decoration-none featured-body-type">🏔 Mountain 🏔</h5>
         </div>
       </div>
@@ -100,7 +100,7 @@
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Paris to Versailles</h3>
         <div class="featured-card-text">
-          <h5>France for X days</h5>
+          <h5>France for <%= (@major_city_1.end_date - @major_city_1.start_date).to_i + 1 %> days</h5>
           <h5 class="text-decoration-none featured-body-type">🌉 City 🌉</h5>
         </div>
       </div>
@@ -110,7 +110,7 @@
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Lille to Strasbourg</h3>
         <div class="featured-card-text">
-          <h5>France for X days</h5>
+          <h5>France for <%= (@major_city_2.end_date - @major_city_2.start_date).to_i + 1 %> days</h5>
           <h5 class="text-decoration-none featured-body-type">🌉 City 🌉</h5>
         </div>
       </div>
@@ -120,7 +120,7 @@
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Lyon</h3>
         <div class="featured-card-text">
-          <h5>France for X days</h5>
+          <h5>France for <%= (@major_city_3.end_date - @major_city_3.start_date).to_i + 1 %> days</h5>
           <h5 class="text-decoration-none featured-body-type">🌉 City 🌉</h5>
         </div>
       </div>
@@ -133,27 +133,27 @@
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Toulouse to Bordeaux</h3>
         <div class="featured-card-text">
-          <h5>France for X days</h5>
+          <h5>France for <%= (@food_1.end_date - @food_1.start_date).to_i + 1 %> days</h5>
           <h5 class="text-decoration-none featured-body-type">🍕 Foodie 🍕</h5>
         </div>
       </div>
     <% end %>
-    <%= link_to journey_path(@food_1), class:"feature-link featured-card" do %>
+    <%= link_to journey_path(@food_2), class:"feature-link featured-card" do %>
       <%= image_tag asset_path("Marseille.jpg"), class: "featured-card-img-top" %>
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Marseille to Lyon</h3>
         <div class="featured-card-text">
-          <h5>France for X days</h5>
+          <h5>France for <%= (@food_2.end_date - @food_2.start_date).to_i + 1 %> days</h5>
           <h5 class="text-decoration-none featured-body-type">🍕 Foodie 🍕</h5>
         </div>
       </div>
     <% end %>
-    <%= link_to journey_path(@food_1), class:"feature-link featured-card" do %>
+    <%= link_to journey_path(@food_3), class:"feature-link featured-card" do %>
       <%= image_tag asset_path("Strasbourg.jpg"), class: "featured-card-img-top" %>
       <div class="featured-card-body">
         <h3 class="text-decoration-none featured-body-title">Strasbourg</h3>
         <div class="featured-card-text">
-          <h5>France for X days</h5>
+          <h5>France for <%= (@food_2.end_date - @food_2.start_date).to_i + 1 %> days</h5>
           <h5 class="text-decoration-none featured-body-type">🍕 Foodie 🍕</h5>
         </div>
       </div>
@@ -174,7 +174,7 @@
     </div>
     <div class="home-info-segment city-trip-text middle-segment-borders">
         <%# <%= image_tag asset_path("w-d.svg"), width: "400", height: "300" %>
-        <p class="fs-4 mt-4"> <strong> <%= Journey.count + 57 %> </strong> trips planned with Trips Selector ! </p>
+        <p class="fs-4 mt-4"> <strong> <%= Journey.count + 70 %> </strong> trips planned with Trips Selector ! </p>
     </div>
     <div class="home-info-segment city-trip-text">
       <%# <%= image_tag asset_path("p-d.svg"), width: "400", height: "300" %>
