@@ -31,7 +31,7 @@
               </li>
           </ul>
           <% if current_user.photo.attached? %>
-            <%= cl_image_tag current_user.photo.key, class: "avatar-menu avatar dropdown-toggle", id: "navbarDropdown" %>
+            <%= cl_image_tag current_user.photo.key, crop: :fill, quality: :auto, gravity: :auto, class: "avatar-menu avatar dropdown-toggle", id: "navbarDropdown" %>
           <% else %>
             <%= image_tag "https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG-Free-Download.png", size: 40, class: "avatar-menu avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <% end %>

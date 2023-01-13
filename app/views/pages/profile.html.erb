@@ -1,24 +1,44 @@
-<%# profile image upload %>
-<%# add additional details, bio/favourite destinations etc %>
-<div class="container text-center border w-50 mt-5 mb-5 devise-container">
-  <h2 class="pt-3"><%= "#{@user.username.capitalize}" %>'s profile page</h2>
+<div class="profile-container">
   <div class="ava pt-3">
   <% if current_user.photo.attached? %>
-    <%= cl_image_tag @user.photo.key, height: 200, width: 200, crop: :fill, class: "pfp" %>
+    <%= cl_image_tag @user.photo.key, crop: :thumb, quality: :auto, class: "profile-avtr" %>
     <% else %>
     <%= image_tag "https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG-Free-Download.png", height: 300, width: 300, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
     <% end %>
   </div>
-  <div class="bio pt-5 pb-5 wrap-text">
-    <%= @user.bio %>
+  <div class="prof-title-and-edit">
+    <p class="prof-title">
+      <%= "#{@user.username.capitalize}" %>'s profile page
+    </p>
+  <%= link_to "users/edit" do %>
+    <p class="prof-edit">
+      Edit Your Profile
+      <i class="fa fa-pencil-square" aria-hidden="true"></i>
+    </p>
+  <% end %>
+
   </div>
-  <div class="p-5">
-    <p class="pb-4">Your favourite destinations are:</p>
-    <li><%= @user.favourite %></li>
-    <li><%= @user.second %></li>
-    <li class="pb-5"><%= @user.third %></li>
-  </div>
-  <div class="edit mb-5">
-   <%= link_to "Edit your profile", "users/edit" %>
+  <% if !@user.bio.empty? %>
+    <div class="prof-bio">
+      <p class="prof-bio-title">Bio:</p>
+      <p class="prof-bio-desc"><%= @user.bio %></p>
+    </div>
+  <% else %>
+    <div class="prof-bio">
+      <p class="prof-bio-title">Bio:</p>
+      <p class="prof-bio-desc">Tell us more about yourself by editing your profile.</p>
+    </div>
+  <% end %>
+  <div class="prof-favs">
+    <% if !@user.favourite.empty? %>
+      <p class="pb-4">Your Favourites:</p>
+      <li class="prof-fav-item">🖤 <%= @user.favourite %> 🖤</li>
+    <% end %>
+    <% if !@user.second.empty? %>
+      <li class="prof-fav-item">🖤 <%= @user.second %> 🖤</li>
+    <% end %>
+    <% if !@user.third.empty? %>
+      <li class="prof-fav-item">🖤 <%= @user.third %> 🖤</li>
+    <% end %>
   </div>
 </div>
