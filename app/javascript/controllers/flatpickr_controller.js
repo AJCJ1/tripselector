@@ -6,7 +6,7 @@ export default class extends Controller {
   static targets = [ "startDate", "endDate" ]
   connect() {
     flatpickr(this.startDateTarget, {
-      plugins: [new rangePlugin({ input: "#end_date"})]
+  //    plugins: [new rangePlugin({ input: "#end_date"})]
     })
     flatpickr(this.endDateTarget, {})
   }
